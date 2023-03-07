@@ -116,6 +116,7 @@ import { isMain, isFlask } from '../../shared/constants/environment';
 // eslint-disable-next-line import/order
 import { DesktopController } from '@metamask/desktop/dist/controllers/desktop';
 ///: END:ONLY_INCLUDE_IN
+import { ACTION_QUEUE_METRICS_E2E_TEST } from '../../shared/constants/test-flags';
 import {
   onMessageReceived,
   checkForMultipleVersionsRunning,
@@ -674,6 +675,7 @@ export default class MetamaskController extends EventEmitter {
     this.keyringController.memStore.subscribe((state) =>
       this._onKeyringControllerUpdate(state),
     );
+
     this.keyringController.on('unlock', () => this._onUnlock());
     this.keyringController.on('lock', () => this._onLock());
 
@@ -2907,6 +2909,13 @@ export default class MetamaskController extends EventEmitter {
    * @returns {} keyState
    */
   async addNewAccount(accountCount) {
+    const isActionMetricsQueueE2ETest =
+      this.appStateController.store.getState()[ACTION_QUEUE_METRICS_E2E_TEST];
+
+    if (process.env.IN_TEST && isActionMetricsQueueE2ETest) {
+      await new Promise((resolve) => setTimeout(resolve, 5_000));
+    }
+
     const [primaryKeyring] = this.keyringController.getKeyringsByType(
       KeyringType.hdKeyTree,
     );
