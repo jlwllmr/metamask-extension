@@ -169,6 +169,7 @@ export default function OnboardingWelcome() {
           >
             <CheckBox
               id="onboarding__terms-checkbox"
+              className="onboarding__terms-checkbox"
               dataTestId="onboarding__terms-checkbox"
               checked={termsChecked}
               onClick={toggleTermsCheck}
@@ -177,7 +178,7 @@ export default function OnboardingWelcome() {
               className="onboarding__terms-label"
               htmlFor="onboarding__terms-checkbox"
             >
-              <Text variant={TextVariant.bodyMd} as="span">
+              <Text variant={TextVariant.bodyMd} marginLeft={2} as="span">
                 {termsOfUse}
               </Text>
             </label>
