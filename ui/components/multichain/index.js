@@ -5,3 +5,4 @@ export { DetectedTokensBanner } from './detected-token-banner';
 export { MultichainImportTokenLink } from './multichain-import-token-link';
 export { MultichainTokenListItem } from './multichain-token-list-item';
 export { NetworkListItem } from './network-list-item';
+export { NetworkListMenu } from './network-list-menu';
