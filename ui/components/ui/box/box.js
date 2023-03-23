@@ -223,6 +223,7 @@ const Box = React.forwardRef(function Box(
     backgroundColor,
     color,
     as = 'div',
+    ariaLabel,
     ...props
   },
   ref,
@@ -301,7 +302,12 @@ const Box = React.forwardRef(function Box(
   }
   const Component = as;
   return (
-    <Component className={boxClassName} ref={ref} {...props}>
+    <Component
+      className={boxClassName}
+      ref={ref}
+      {...props}
+      aria-label={ariaLabel}
+    >
       {children}
     </Component>
   );
