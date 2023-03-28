@@ -13,7 +13,7 @@ import { convertHexToDecimal } from '@metamask/controller-utils';
 import { NETWORK_TYPES } from '../../../shared/constants/network';
 import { toChecksumHexAddress } from '../../../shared/modules/hexstring-utils';
 import DetectTokensController from './detect-tokens';
-import NetworkController, { NETWORK_EVENTS } from './network';
+import { NetworkController, NETWORK_EVENTS } from './network';
 import PreferencesController from './preferences';
 
 describe('DetectTokensController', function () {

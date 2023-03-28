@@ -6,7 +6,7 @@ import sinon from 'sinon';
 import * as ethJsonRpcProvider from '@metamask/eth-json-rpc-provider';
 import { BUILT_IN_NETWORKS } from '../../../../shared/constants/network';
 import { MetaMetricsEventNetworkSource } from '../../../../shared/constants/metametrics';
-import NetworkController from './network-controller';
+import { NetworkController } from './network-controller';
 
 jest.mock('@metamask/eth-json-rpc-provider', () => {
   return {
@@ -1068,7 +1068,7 @@ describe('NetworkController', () => {
     });
 
     describe('when the request for the latest block responds with null', () => {
-      it('persists null to state as whether the network supports EIP-1559', async () => {
+      it('persists false to state as whether the network supports EIP-1559', async () => {
         await withController(
           {
             state: {
@@ -1086,13 +1086,13 @@ describe('NetworkController', () => {
             await controller.getEIP1559Compatibility();
 
             expect(controller.store.getState().networkDetails.EIPS[1559]).toBe(
-              null,
+              false,
             );
           },
         );
       });
 
-      it('returns null', async () => {
+      it('returns false', async () => {
         await withController(async ({ controller, network }) => {
           network.mockEssentialRpcCalls({
             latestBlock: null,
@@ -1101,7 +1101,7 @@ describe('NetworkController', () => {
 
           const supportsEIP1559 = await controller.getEIP1559Compatibility();
 
-          expect(supportsEIP1559).toBe(null);
+          expect(supportsEIP1559).toBe(false);
         });
       });
     });
