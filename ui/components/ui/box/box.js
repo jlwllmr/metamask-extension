@@ -305,7 +305,7 @@ const Box = React.forwardRef(function Box(
     <Component
       className={boxClassName}
       ref={ref}
-      {...props}
+      {...[...props, ariaLabel]}
       aria-label={ariaLabel}
     >
       {children}
