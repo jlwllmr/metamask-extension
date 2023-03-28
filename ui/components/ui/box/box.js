@@ -378,6 +378,7 @@ Box.propTypes = {
    * ./ui/helpers/constants/design-system.js
    */
   color: MultipleTextColors,
+  ariaLabel: PropTypes.string,
 };
 
 export default Box;
