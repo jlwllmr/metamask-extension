@@ -291,7 +291,6 @@ export default class MetamaskController extends EventEmitter {
     this.preferencesController = new PreferencesController({
       initState: initState.PreferencesController,
       initLangCode: opts.initLangCode,
-      openPopup: opts.openPopup,
       network: this.networkController,
       tokenListController: this.tokenListController,
       provider: this.provider,
