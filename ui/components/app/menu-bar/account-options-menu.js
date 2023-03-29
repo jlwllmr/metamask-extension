@@ -24,7 +24,7 @@ import { ENVIRONMENT_TYPE_FULLSCREEN } from '../../../../shared/constants/app';
 import { KeyringType } from '../../../../shared/constants/keyring';
 import { EVENT, EVENT_NAMES } from '../../../../shared/constants/metametrics';
 import { MetaMetricsContext } from '../../../contexts/metametrics';
-import { ICON_NAMES } from '../../component-library';
+import { ICON_NAMES } from '../../component-library/icon/deprecated';
 
 export default function AccountOptionsMenu({ anchorElement, onClose }) {
   const t = useI18nContext();

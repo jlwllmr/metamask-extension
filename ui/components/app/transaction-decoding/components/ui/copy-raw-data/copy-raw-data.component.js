@@ -7,7 +7,7 @@ import { useCopyToClipboard } from '../../../../../../hooks/useCopyToClipboard';
 import {
   Icon,
   ICON_NAMES,
-} from '../../../../../component-library/deprecated/icon/deprecated';
+} from '../../../../../component-library/icon/deprecated';
 import { IconColor } from '../../../../../../helpers/constants/design-system';
 
 const CopyRawData = ({ data }) => {

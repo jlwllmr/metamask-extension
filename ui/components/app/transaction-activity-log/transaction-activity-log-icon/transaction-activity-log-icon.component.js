@@ -16,7 +16,7 @@ import {
   Icon,
   ICON_NAMES,
   ICON_SIZES,
-} from '../../../component-library/deprecated/icon/deprecated';
+} from '../../../component-library/icon/deprecated';
 import { Color } from '../../../../helpers/constants/design-system';
 
 export const ACTIVITY_ICONS = {

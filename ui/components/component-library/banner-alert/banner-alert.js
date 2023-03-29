@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-import { Icon, ICON_NAMES } from '../../icon/deprecated';
+import { Icon, ICON_NAMES } from '../icon/deprecated';
 import { BannerBase } from '..';
 
 import {
