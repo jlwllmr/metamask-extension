@@ -223,7 +223,6 @@ const Box = React.forwardRef(function Box(
     backgroundColor,
     color,
     as = 'div',
-    ariaLabel,
     ...props
   },
   ref,
@@ -303,12 +302,7 @@ const Box = React.forwardRef(function Box(
   const Component = as;
 
   return (
-    <Component
-      className={boxClassName}
-      ref={ref}
-      aria-label={ariaLabel}
-      {...{ ...props, ariaLabel }}
-    >
+    <Component className={boxClassName} ref={ref} {...props}>
       {children}
     </Component>
   );
@@ -379,7 +373,6 @@ Box.propTypes = {
    * ./ui/helpers/constants/design-system.js
    */
   color: MultipleTextColors,
-  ariaLabel: PropTypes.string,
 };
 
 export default Box;
