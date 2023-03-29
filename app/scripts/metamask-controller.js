@@ -645,7 +645,7 @@ export default class MetamaskController extends EventEmitter {
     });
 
     this.tokensController.hub.on('pendingSuggestedAsset', async () => {
-      await opts.openPopup();
+      await opts.showUserConfirmation(true);
     });
 
     let additionalKeyrings = [keyringBuilderFactory(QRHardwareKeyring)];
