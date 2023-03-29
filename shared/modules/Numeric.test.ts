@@ -10,78 +10,78 @@ const ONE_WEI = new Numeric(1, 10, EtherDenomination.WEI);
 describe('Numeric', () => {
   describe('Basic Numeric Construction', () => {
     describe('From hexadeciaml strings', () => {
-      it('Should create a new Numeric from a hexadecimal string', () => {
+      it('should create a new Numeric from a hexadecimal string', () => {
         const numeric = new Numeric('0xa', 16);
         expect(numeric.value).toEqual(new BigNumber(10, 10));
       });
 
-      it('Should create a new Numeric from a hexadecimal string with a decimal', () => {
+      it('should create a new Numeric from a hexadecimal string with a decimal', () => {
         const numeric = new Numeric('0xa.7', 16);
         expect(numeric.value).toEqual(new BigNumber(10.4375, 10));
       });
 
-      it('Should create a new Numeric from a hexadecimal string with negation', () => {
+      it('should create a new Numeric from a hexadecimal string with negation', () => {
         const numeric = new Numeric('-0xa', 16);
         expect(numeric.value).toEqual(new BigNumber(-10, 10));
       });
 
-      it('Should create a new Numeric from a hexadecimal string with negation and decimal', () => {
+      it('should create a new Numeric from a hexadecimal string with negation and decimal', () => {
         const numeric = new Numeric('-0xa.7', 16);
         expect(numeric.value).toEqual(new BigNumber(-10.4375, 10));
       });
     });
 
     describe('From decimal strings', () => {
-      it('Should create a new Numeric from a decimal string', () => {
+      it('should create a new Numeric from a decimal string', () => {
         const numeric = new Numeric('10', 10);
         expect(numeric.value).toEqual(new BigNumber(10, 10));
       });
 
-      it('Should create a new Numeric from a decimal string with a decimal', () => {
+      it('should create a new Numeric from a decimal string with a decimal', () => {
         const numeric = new Numeric('10.4375', 10);
         expect(numeric.value).toEqual(new BigNumber(10.4375, 10));
       });
 
-      it('Should create a new Numeric from a decimal string with negation', () => {
+      it('should create a new Numeric from a decimal string with negation', () => {
         const numeric = new Numeric('-10', 10);
         expect(numeric.value).toEqual(new BigNumber(-10, 10));
       });
 
-      it('Should create a new Numeric from a decimal string with negation and decimal', () => {
+      it('should create a new Numeric from a decimal string with negation and decimal', () => {
         const numeric = new Numeric('-10.4375', 10);
         expect(numeric.value).toEqual(new BigNumber(-10.4375, 10));
       });
     });
 
     describe('From decimal numbers', () => {
-      it('Should create a new Numeric from a hexadecimal number', () => {
+      it('should create a new Numeric from a hexadecimal number', () => {
         const numeric = new Numeric(10, 10);
         expect(numeric.value).toEqual(new BigNumber(10, 10));
       });
 
-      it('Should create a new Numeric from a hexadecimal string with a decimal', () => {
+      it('should create a new Numeric from a hexadecimal string with a decimal', () => {
         const numeric = new Numeric(10.4375, 10);
         expect(numeric.value).toEqual(new BigNumber(10.4375, 10));
       });
 
-      it('Should create a new Numeric from a hexadecimal string with negation', () => {
+      it('should create a new Numeric from a hexadecimal string with negation', () => {
         const numeric = new Numeric(-10, 10);
         expect(numeric.value).toEqual(new BigNumber(-10, 10));
       });
 
-      it('Should create a new Numeric from a hexadecimal string with negation and decimal', () => {
+      it('should create a new Numeric from a hexadecimal string with negation and decimal', () => {
         const numeric = new Numeric(-10.4375, 16);
         expect(numeric.value).toEqual(new BigNumber(-10.4375, 10));
       });
     });
 
     describe('From BigNumbers or BN', () => {
-      it('Should create a new Numeric from a BigNumber', () => {
+      it('should create a new Numeric from a BigNumber', () => {
         const numeric = new Numeric(new BigNumber(100, 10));
         expect(numeric.value).toEqual(new BigNumber(100, 10));
       });
 
-      it('Should create a new Numeric from a BN', () => {
+      it('should create a new Numeric from a BN', () => {
         const numeric = new Numeric(new BN(100, 10), 10);
         expect(numeric.value).toEqual(new BigNumber(100, 10));
       });
@@ -89,19 +89,19 @@ describe('Numeric', () => {
   });
 
   describe('Error checking', () => {
-    it('Should throw an error for a non numeric string', () => {
+    it('should throw an error for a non numeric string', () => {
       expect(() => new Numeric('Hello there', 10)).toThrow(
         'String provided to stringToBigNumber is not a hexadecimal or decimal string: Hello there, 10',
       );
     });
 
-    it('Should throw an error for a numeric string without a base', () => {
+    it('should throw an error for a numeric string without a base', () => {
       expect(() => new Numeric('10')).toThrow(
         'You must specify the base of the provided number if the value is not already a BigNumber',
       );
     });
 
-    it('Should throw an error for a non numeric type', () => {
+    it('should throw an error for a non numeric type', () => {
       expect(() => new Numeric(true as unknown as number, 10)).toThrow(
         'Value: true is not a string, number, BigNumber or BN. Type is: boolean.',
       );
@@ -109,13 +109,13 @@ describe('Numeric', () => {
   });
 
   describe('Erroneous behaviors that we are temporarily continuing', () => {
-    it('Handles values that are undefined, setting the value to 0', () => {
+    it('handles values that are undefined, setting the value to 0', () => {
       expect(new Numeric(undefined as unknown as number).toString()).toEqual(
         '0',
       );
     });
 
-    it('Handles values that are NaN, setting the value to 0', () => {
+    it('handles values that are NaN, setting the value to 0', () => {
       expect(new Numeric(NaN).toString()).toEqual('0');
     });
   });
@@ -160,7 +160,7 @@ describe('Numeric', () => {
 
   describe('Math operations', () => {
     describe('Multiplication', () => {
-      it('Should compute correct results for simple multiplication', () => {
+      it('should compute correct results for simple multiplication', () => {
         expect(new Numeric(5, 10).times(5, 10).toNumber()).toEqual(25);
 
         expect(
@@ -172,7 +172,7 @@ describe('Numeric', () => {
         ).toEqual(250);
       });
 
-      it('Should compute correct results for multiplication of big numbers', () => {
+      it('should compute correct results for multiplication of big numbers', () => {
         expect(
           new Numeric('175671432', 10).times('686216', 10).toString(),
         ).toEqual('120548547381312');
@@ -190,7 +190,7 @@ describe('Numeric', () => {
         ).toEqual('286541254738131200');
       });
 
-      it('Should compute correct results for multiplication of negative big numbers', () => {
+      it('should compute correct results for multiplication of negative big numbers', () => {
         expect(
           new Numeric('175671432', 10).times('-686216', 10).toString(),
         ).toEqual('-120548547381312');
@@ -210,7 +210,7 @@ describe('Numeric', () => {
     });
 
     describe('Division', () => {
-      it('Should compute correct results for simple division', () => {
+      it('should compute correct results for simple division', () => {
         expect(new Numeric(25, 10).divide(5, 10).toNumber()).toEqual(5);
 
         expect(
@@ -222,7 +222,7 @@ describe('Numeric', () => {
         ).toEqual(25);
       });
 
-      it('Should compute correct results for division of big numbers', () => {
+      it('should compute correct results for division of big numbers', () => {
         expect(
           new Numeric('175671432', 10).divide('686216', 10).toString(),
         ).toEqual('256.00019818832554181191');
@@ -240,7 +240,7 @@ describe('Numeric', () => {
         ).toEqual('6085.06859647691106007438');
       });
 
-      it('Should compute correct results for division of negative big numbers', () => {
+      it('should compute correct results for division of negative big numbers', () => {
         expect(
           new Numeric('175671432', 10).divide('-686216', 10).toString(),
         ).toEqual('-256.00019818832554181191');
@@ -260,7 +260,7 @@ describe('Numeric', () => {
     });
 
     describe('Addition', () => {
-      it('Should compute correct results for simple addition', () => {
+      it('should compute correct results for simple addition', () => {
         expect(new Numeric(25, 10).add(5, 10).toNumber()).toEqual(30);
 
         expect(new Numeric(50, 10).add(new Numeric(10, 10)).toNumber()).toEqual(
@@ -272,7 +272,7 @@ describe('Numeric', () => {
         ).toEqual(350);
       });
 
-      it('Should compute correct results for addition of big numbers', () => {
+      it('should compute correct results for addition of big numbers', () => {
         expect(
           new Numeric('175671432', 10).add('686216', 10).toString(),
         ).toEqual('176357648');
@@ -290,7 +290,7 @@ describe('Numeric', () => {
         ).toEqual('41763576480');
       });
 
-      it('Should compute correct results for addition of negative big numbers', () => {
+      it('should compute correct results for addition of negative big numbers', () => {
         expect(
           new Numeric('175671432', 10).add('-686216', 10).toString(),
         ).toEqual('174985216');
@@ -310,7 +310,7 @@ describe('Numeric', () => {
     });
 
     describe('Subtraction', () => {
-      it('Should compute correct results for simple subtraction', () => {
+      it('should compute correct results for simple subtraction', () => {
         expect(new Numeric(25, 10).minus(5, 10).toNumber()).toEqual(20);
 
         expect(
@@ -322,7 +322,7 @@ describe('Numeric', () => {
         ).toEqual(150);
       });
 
-      it('Should compute correct results for subtraction of big numbers', () => {
+      it('should compute correct results for subtraction of big numbers', () => {
         expect(
           new Numeric('175671432', 10).minus('686216', 10).toString(),
         ).toEqual('174985216');
@@ -340,7 +340,7 @@ describe('Numeric', () => {
         ).toEqual('41749852160');
       });
 
-      it('Should compute correct results for subtraction of negative big numbers', () => {
+      it('should compute correct results for subtraction of negative big numbers', () => {
         expect(
           new Numeric('175671432', 10).minus('-686216', 10).toString(),
         ).toEqual('176357648');
@@ -360,13 +360,13 @@ describe('Numeric', () => {
     });
 
     describe('applyConversionRate', () => {
-      it('Should multiply the value by the conversionRate supplied', () => {
+      it('should multiply the value by the conversionRate supplied', () => {
         expect(
           new Numeric(10, 10).applyConversionRate(468.5).toString(),
         ).toEqual('4685');
       });
 
-      it('Should multiply the value by the conversionRate supplied when conversionRate is a BigNumber', () => {
+      it('should multiply the value by the conversionRate supplied when conversionRate is a BigNumber', () => {
         expect(
           new Numeric(10, 10)
             .applyConversionRate(new BigNumber(468.5, 10))
@@ -374,13 +374,13 @@ describe('Numeric', () => {
         ).toEqual('4685');
       });
 
-      it('Should multiply the value by the inverse of conversionRate supplied when second parameter is true', () => {
+      it('should multiply the value by the inverse of conversionRate supplied when second parameter is true', () => {
         expect(
           new Numeric(10, 10).applyConversionRate(468.5, true).toString(),
         ).toEqual('0.0213447171824973319');
       });
 
-      it('Should multiply the value by the inverse of the BigNumber conversionRate supplied when second parameter is true', () => {
+      it('should multiply the value by the inverse of the BigNumber conversionRate supplied when second parameter is true', () => {
         expect(
           new Numeric(10, 10)
             .applyConversionRate(new BigNumber(468.5, 10), true)
@@ -413,52 +413,52 @@ describe('Numeric', () => {
   });
 
   describe('Comparisons', () => {
-    it('Should correctly identify that 0xa is greater than 0x9', () => {
+    it('should correctly identify that 0xa is greater than 0x9', () => {
       expect(new Numeric('0xa', 16).greaterThan('0x9', 16)).toEqual(true);
     });
-    it('Should correctly identify that 0x9 is less than 0xa', () => {
+    it('should correctly identify that 0x9 is less than 0xa', () => {
       expect(new Numeric('0x9', 16).lessThan('0xa', 16)).toEqual(true);
     });
-    it('Should correctly identify that 0xa is greater than or equal to 0xa', () => {
+    it('should correctly identify that 0xa is greater than or equal to 0xa', () => {
       expect(new Numeric('0xa', 16).greaterThanOrEqualTo('0xa', 16)).toEqual(
         true,
       );
     });
-    it('Should correctly identify that 0xa is less than or equal to 0xa', () => {
+    it('should correctly identify that 0xa is less than or equal to 0xa', () => {
       expect(new Numeric('0xa', 16).lessThanOrEqualTo('0xa', 16)).toEqual(true);
     });
 
-    it('Should correctly identify that 0xa is greater than 9', () => {
+    it('should correctly identify that 0xa is greater than 9', () => {
       expect(new Numeric('0xa', 16).greaterThan(9, 10)).toEqual(true);
     });
-    it('Should correctly identify that 0x9 is less than 10', () => {
+    it('should correctly identify that 0x9 is less than 10', () => {
       expect(new Numeric('0x9', 16).lessThan(10, 10)).toEqual(true);
     });
-    it('Should correctly identify that 10 is greater than or equal to 0xa', () => {
+    it('should correctly identify that 10 is greater than or equal to 0xa', () => {
       expect(new Numeric(10, 10).greaterThanOrEqualTo('0xa', 16)).toEqual(true);
     });
-    it('Should correctly identify that 10 is less than or equal to 0xa', () => {
+    it('should correctly identify that 10 is less than or equal to 0xa', () => {
       expect(new Numeric(10, 10).lessThanOrEqualTo('0xa', 16)).toEqual(true);
     });
   });
 
   describe('Positive and Negative determination', () => {
-    it('Should correctly identify a negative number with isNegative', () => {
+    it('should correctly identify a negative number with isNegative', () => {
       expect(new Numeric(-10, 10).isNegative()).toEqual(true);
       expect(new Numeric('-10', 10).isNegative()).toEqual(true);
       expect(new Numeric('-0xa', 16).isNegative()).toEqual(true);
     });
-    it('Should return false for isNegative when number is positive', () => {
+    it('should return false for isNegative when number is positive', () => {
       expect(new Numeric(10, 10).isNegative()).toEqual(false);
       expect(new Numeric('10', 10).isNegative()).toEqual(false);
       expect(new Numeric('0xa', 16).isNegative()).toEqual(false);
     });
-    it('Should correctly identify a positive number with isPositive', () => {
+    it('should correctly identify a positive number with isPositive', () => {
       expect(new Numeric(10, 10).isPositive()).toEqual(true);
       expect(new Numeric('10', 10).isPositive()).toEqual(true);
       expect(new Numeric('0xa', 16).isPositive()).toEqual(true);
     });
-    it('Should return false for isPositive when number is negative', () => {
+    it('should return false for isPositive when number is negative', () => {
       expect(new Numeric(-10, 10).isPositive()).toEqual(false);
       expect(new Numeric('-10', 10).isPositive()).toEqual(false);
       expect(new Numeric('-0xa', 16).isPositive()).toEqual(false);
@@ -467,71 +467,71 @@ describe('Numeric', () => {
 
   describe('Terminating functions, return values', () => {
     describe('toString', () => {
-      it('Should return a string representation of provided hex', () => {
+      it('should return a string representation of provided hex', () => {
         expect(new Numeric('0xa', 16).toString()).toEqual('a');
       });
 
-      it('Should return a string representation of provided decimal string', () => {
+      it('should return a string representation of provided decimal string', () => {
         expect(new Numeric('10', 10).toString()).toEqual('10');
       });
 
-      it('Should return a string representation of provided number', () => {
+      it('should return a string representation of provided number', () => {
         expect(new Numeric(10, 10).toString()).toEqual('10');
       });
 
-      it('Should return a string representation of provided float', () => {
+      it('should return a string representation of provided float', () => {
         expect(new Numeric(10.5, 10).toString()).toEqual('10.5');
       });
 
-      it('Should return a string representation of provided BigNumber', () => {
+      it('should return a string representation of provided BigNumber', () => {
         expect(new Numeric(new BigNumber(10, 10)).toString()).toEqual('10');
       });
 
-      it('Should return a string representation of provided BN', () => {
+      it('should return a string representation of provided BN', () => {
         expect(new Numeric(new BN(10, 10)).toString()).toEqual('10');
       });
     });
 
     describe('toNumber', () => {
-      it('Should return a number representing provided hex', () => {
+      it('should return a number representing provided hex', () => {
         expect(new Numeric('0xa', 16).toNumber()).toEqual(10);
       });
 
-      it('Should return a number representation of provided decimal string', () => {
+      it('should return a number representation of provided decimal string', () => {
         expect(new Numeric('10', 10).toNumber()).toEqual(10);
       });
 
-      it('Should return a number representation of provided number', () => {
+      it('should return a number representation of provided number', () => {
         expect(new Numeric(10, 10).toNumber()).toEqual(10);
       });
 
-      it('Should return a number representation of provided float', () => {
+      it('should return a number representation of provided float', () => {
         expect(new Numeric(10.5, 10).toNumber()).toEqual(10.5);
       });
 
-      it('Should return a number representation of provided BigNumber', () => {
+      it('should return a number representation of provided BigNumber', () => {
         expect(new Numeric(new BigNumber(10, 10)).toNumber()).toEqual(10);
       });
 
-      it('Should return a number representation of provided BN', () => {
+      it('should return a number representation of provided BN', () => {
         expect(new Numeric(new BN(10, 10)).toNumber()).toEqual(10);
       });
     });
 
     describe('toFixed', () => {
-      it('Should return a string representing provided hex to 2 decimal places', () => {
+      it('should return a string representing provided hex to 2 decimal places', () => {
         expect(new Numeric('0xa.7', 16).toFixed(2)).toEqual('10.44');
       });
 
-      it('Should return a string representation of provided decimal string to 2 decimal places', () => {
+      it('should return a string representation of provided decimal string to 2 decimal places', () => {
         expect(new Numeric('10.4375', 10).toFixed(2)).toEqual('10.44');
       });
 
-      it('Should return a string representation of provided float to 2 decimal places', () => {
+      it('should return a string representation of provided float to 2 decimal places', () => {
         expect(new Numeric(10.4375, 10).toFixed(2)).toEqual('10.44');
       });
 
-      it('Should return a number representation of provided BigNumber to 2 decimal places', () => {
+      it('should return a number representation of provided BigNumber to 2 decimal places', () => {
         expect(new Numeric(new BigNumber(10.4375, 10)).toFixed(2)).toEqual(
           '10.44',
         );
