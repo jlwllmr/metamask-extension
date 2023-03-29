@@ -300,7 +300,6 @@ const Box = React.forwardRef(function Box(
     return children(boxClassName);
   }
   const Component = as;
-
   return (
     <Component className={boxClassName} ref={ref} {...props}>
       {children}
