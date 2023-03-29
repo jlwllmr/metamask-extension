@@ -13,7 +13,8 @@ import {
   TextColor,
 } from '../../../../helpers/constants/design-system';
 import Box from '../../../ui/box';
-import { Icon, Text } from '../../../component-library';
+import { Icon, ICON_NAMES } from '../../../component-library/icon/deprecated';
+import { Text } from '../../../component-library';
 
 export const SnapDelineator = ({ snapName, children }) => {
   const t = useI18nContext();
@@ -34,7 +35,11 @@ export const SnapDelineator = ({ snapName, children }) => {
         paddingTop={1}
         paddingBottom={1}
       >
-        <Icon name="snaps" color={IconColor.infoDefault} size={Size.SM} />
+        <Icon
+          name={ICON_NAMES.SNAPS}
+          color={IconColor.infoDefault}
+          size={Size.SM}
+        />
         <Text
           variant={TextVariant.bodySm}
           color={TextColor.infoDefault}

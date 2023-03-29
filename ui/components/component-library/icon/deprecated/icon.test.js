@@ -1,7 +1,7 @@
 /* eslint-disable jest/require-top-level-describe */
 import { render } from '@testing-library/react';
 import React from 'react';
-import { Size, IconColor } from '../../../helpers/constants/design-system';
+import { Size, IconColor } from '../../../../helpers/constants/design-system';
 import { ICON_NAMES } from './icon.constants';
 import { Icon } from './icon';
 
