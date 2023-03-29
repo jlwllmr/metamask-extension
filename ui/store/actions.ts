@@ -3974,6 +3974,12 @@ export function setRecoveryPhraseReminderLastShown(
   };
 }
 
+export function setTermsOfUseLastAgreed(lastAgreed: number) {
+  return async () => {
+    await submitRequestToBackground('setTermsOfUseLastAgreed', [lastAgreed]);
+  };
+}
+
 export function setOutdatedBrowserWarningLastShown(lastShown: number) {
   return async () => {
     await submitRequestToBackground('setOutdatedBrowserWarningLastShown', [
