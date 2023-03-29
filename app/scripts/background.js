@@ -267,7 +267,9 @@ async function initialize() {
     await DesktopManager.init(platform.getVersion());
     ///: END:ONLY_INCLUDE_IN
 
-    let { isFirstMetaMaskControllerSetup } = await browser.storage.session.get(['isFirstMetaMaskControllerSetup']);
+    let { isFirstMetaMaskControllerSetup } = await browser.storage.session.get([
+      'isFirstMetaMaskControllerSetup',
+    ]);
 
     if (isFirstMetaMaskControllerSetup === true) {
       isFirstMetaMaskControllerSetup = false;
@@ -277,7 +279,12 @@ async function initialize() {
       await browser.storage.session.set({ isFirstMetaMaskControllerSetup });
     }
 
-    setupController(initState, initLangCode, {}, isFirstMetaMaskControllerSetup);
+    setupController(
+      initState,
+      initLangCode,
+      {},
+      isFirstMetaMaskControllerSetup,
+    );
     if (!isManifestV3) {
       await loadPhishingWarningPage();
     }
@@ -421,8 +428,14 @@ export async function loadStateFromPersistence() {
  * @param {object} initState - The initial state to start the controller with, matches the state that is emitted from the controller.
  * @param {string} initLangCode - The region code for the language preferred by the current user.
  * @param {object} overrides - object with callbacks that are allowed to override the setup controller logic (usefull for desktop app)
+ * @param isFirstMetaMaskControllerSetup
  */
-export function setupController(initState, initLangCode, overrides, isFirstMetaMaskControllerSetup) {
+export function setupController(
+  initState,
+  initLangCode,
+  overrides,
+  isFirstMetaMaskControllerSetup,
+) {
   //
   // MetaMask Controller
   //
