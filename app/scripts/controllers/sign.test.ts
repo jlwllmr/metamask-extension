@@ -57,6 +57,7 @@ const messageMock = {
 const coreMessageMock = {
   ...messageMock,
   messageParams: messageParamsMock,
+  securityProviderResponse: securityProviderResponseMock,
 };
 
 const stateMessageMock = {
