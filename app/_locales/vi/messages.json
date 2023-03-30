@@ -150,6 +150,9 @@
   "accountSelectionRequired": {
     "message": "Bạn cần chọn một tài khoản!"
   },
+  "activated": {
+    "message": "Đang hoạt động"
+  },
   "active": {
     "message": "Đang hoạt động"
   },
@@ -170,6 +173,9 @@
   },
   "addANickname": {
     "message": "Thêm tên riêng"
+  },
+  "addAccount": {
+    "message": "Thêm tài khoản"
   },
   "addAcquiredTokens": {
     "message": "Thêm token mà bạn đã mua bằng MetaMask"
@@ -257,11 +263,17 @@
     "message": "Kết nối mạng này dựa vào các bên thứ ba. Kết nối này có thể kém tin cậy hơn hoặc cho phép các bên thứ ba theo dõi hoạt động. $1",
     "description": "$1 is Learn more link"
   },
+  "addNewToken": {
+    "message": "Thêm token mới"
+  },
   "addSuggestedTokens": {
     "message": "Thêm token được đề xuất"
   },
   "addToken": {
     "message": "Thêm token"
+  },
+  "addingCustomNetwork": {
+    "message": "Thêm mạng"
   },
   "address": {
     "message": "Địa chỉ"
@@ -315,6 +327,10 @@
     "message": "Tất cả $1 của bạn",
     "description": "$1 is the symbol or name of the token that the user is approving spending"
   },
+  "allYourNFTsOf": {
+    "message": "Tất cả NFT của bạn từ $1",
+    "description": "$1 is a link to contract on the block explorer when we're not able to retrieve a erc721 or erc1155 name"
+  },
   "allowExternalExtensionTo": {
     "message": "Cho phép tiện ích bên ngoài này:"
   },
@@ -359,6 +375,10 @@
     "message": "Cấp quyền truy cập vào và chuyển tất cả $1 của bạn?",
     "description": "$1 is the symbol of the token for which the user is granting approval"
   },
+  "approveAllTokensTitleWithoutSymbol": {
+    "message": "Cho phép truy cập và chuyển tất cả NFT của bạn từ $1?",
+    "description": "$1 a link to contract on the block explorer when we're not able to retrieve a erc721 or erc1155 name"
+  },
   "approveAndInstall": {
     "message": "Chấp nhận và cài đặt"
   },
@@ -374,6 +394,10 @@
   },
   "approveTokenDescription": {
     "message": "Điều này cho phép bên thứ ba được quyền truy cập và chuyển các NFT sau đây mà không cần thông báo thêm cho đến khi bạn thu hồi quyền truy cập của họ."
+  },
+  "approveTokenDescriptionWithoutSymbol": {
+    "message": "Hành động này sẽ cho phép bên thứ ba truy cập và chuyển tất cả NFT của bạn từ $1 mà không cần thông báo thêm cho đến khi bạn thu hồi quyền truy cập của họ.",
+    "description": "$1 is a link to contract on the block explorer when we're not able to retrieve a erc721 or erc1155 name"
   },
   "approveTokenTitle": {
     "message": "Cho phép truy cập và chuyển $1 của bạn?",
@@ -512,6 +536,9 @@
   "blockies": {
     "message": "Blockies"
   },
+  "bridge": {
+    "message": "Cầu nối"
+  },
   "browserNotSupported": {
     "message": "Trình duyệt của bạn không được hỗ trợ..."
   },
@@ -615,8 +642,38 @@
   "close": {
     "message": "Đóng"
   },
+  "codefiCompliance": {
+    "message": "Codefi Compliance"
+  },
   "coingecko": {
     "message": "CoinGecko"
+  },
+  "complianceBlurb0": {
+    "message": "DeFi làm gia tăng rủi ro Chống rửa tiền/Chống tài trợ cho khủng bố đối với các tổ chức, do các nhóm phi tập trung và đối tác ẩn danh."
+  },
+  "complianceBlurb1": {
+    "message": "Codefi Compliance là sản phẩm duy nhất có khả năng thực hiện phân tích Chống rửa tiền/Chống tài trợ cho khủng bố trên các nhóm DeFi. Điều này cho phép bạn xác định và tránh các nhóm và đối tác không đáp ứng điều kiện trong cài đặt rủi ro của bạn."
+  },
+  "complianceBlurbStep1": {
+    "message": "Đăng ký Codefi Compliance bên dưới"
+  },
+  "complianceBlurbStep2": {
+    "message": "Tạo một tổ chức"
+  },
+  "complianceBlurbStep3": {
+    "message": "Tạo một dự án"
+  },
+  "complianceBlurbStep4": {
+    "message": "Thiết lập cài đặt tuân thủ của bạn"
+  },
+  "complianceBlurbStep5": {
+    "message": "Nhấn vào nút \"Kích hoạt Tuân thủ trong MMI\""
+  },
+  "complianceBlurpStep0": {
+    "message": "Các bước để kích hoạt Tuân thủ Chống rửa tiền/Chống tài trợ cho khủng bố:"
+  },
+  "complianceSettingsExplanation": {
+    "message": "Thay đổi cài đặt của bạn hoặc xem báo cáo bằng cách mở Codefi Compliance hoặc ngắt kết nối bên dưới."
   },
   "confirm": {
     "message": "Xác nhận"
@@ -1302,8 +1359,15 @@
     "message": "Cụm:",
     "description": "Title for error stack, which is displayed for debugging purposes"
   },
+  "errorWhileConnectingToRPC": {
+    "message": "Gặp lỗi khi kết nối với mạng tùy chỉnh."
+  },
   "ethGasPriceFetchWarning": {
     "message": "Giá gas dự phòng được cung cấp vì dịch vụ ước tính giá gas chính hiện không hoạt động."
+  },
+  "ethereumProviderAccess": {
+    "message": "Cấp quyền truy cập $1 cho nhà cung cấp Ethereum",
+    "description": "The parameter is the name of the requesting origin"
   },
   "ethereumPublicAddress": {
     "message": "Địa chỉ công khai trên Ethereum"
@@ -1323,8 +1387,14 @@
   "experimental": {
     "message": "Thử nghiệm"
   },
+  "exploreMetaMaskSnaps": {
+    "message": "Khám phá MetaMask Snap"
+  },
   "exportPrivateKey": {
     "message": "Xuất khóa riêng tư"
+  },
+  "extendWalletWithSnaps": {
+    "message": "Mở rộng trải nghiệm sử dụng ví."
   },
   "externalExtension": {
     "message": "Tiện ích bên ngoài"
@@ -1354,6 +1424,9 @@
   "fileImportFail": {
     "message": "Tính năng nhập tập tin không hoạt động? Nhấn vào đây!",
     "description": "Helps user import their account from a JSON file"
+  },
+  "fileTooBig": {
+    "message": "Kích thước tập tin thả vào quá lớn."
   },
   "flaskSnapSettingsCardButtonCta": {
     "message": "Xem chi tiết",
@@ -1531,6 +1604,9 @@
   "hardware": {
     "message": "Phần cứng"
   },
+  "hardwareWallet": {
+    "message": "Ví cứng"
+  },
   "hardwareWalletConnected": {
     "message": "Đã kết nối với ví cứng"
   },
@@ -1631,8 +1707,23 @@
   "importAccountError": {
     "message": "Lỗi khi nhập tài khoản."
   },
+  "importAccountErrorIsSRP": {
+    "message": "Bạn đã nhập Cụm từ khôi phục bí mật (hoặc thông tin gợi nhớ). Để nhập tài khoản tại đây, bạn phải nhập khóa riêng tư, là một chuỗi thập lục phân có độ dài 64."
+  },
+  "importAccountErrorNotAValidPrivateKey": {
+    "message": "Khóa riêng tư này không hợp lệ. Bạn đã nhập một chuỗi thập lục phân, nhưng phải dài 64 ký tự."
+  },
+  "importAccountErrorNotHexadecimal": {
+    "message": "Khóa riêng tư này không hợp lệ. Bạn phải nhập một chuỗi thập lục phân có độ dài 64."
+  },
+  "importAccountJsonLoading1": {
+    "message": "Dự kiến quá trình nhập JSON này sẽ mất vài phút và đóng băng MetaMask."
+  },
+  "importAccountJsonLoading2": {
+    "message": "Chân thành xin lỗi bạn, chúng tôi sẽ cải thiện để quá trình này nhanh hơn trong tương lai."
+  },
   "importAccountMsg": {
-    "message": "Tài khoản đã nhập sẽ không được liên kết với Cụm mật khẩu khôi phục bí mật cho tài khoản MetaMask đã tạo ban đầu của bạn. Tìm hiểu thêm về các tài khoản đã nhập"
+    "message": "Tài khoản đã nhập sẽ không được liên kết với Cụm từ khôi phục bí mật MetaMask của bạn. Tìm hiểu thêm về tài khoản đã nhập"
   },
   "importMyWallet": {
     "message": "Nhập ví của tôi"
@@ -1913,6 +2004,9 @@
   "lock": {
     "message": "Khóa"
   },
+  "lockMetaMask": {
+    "message": "Khóa MetaMask"
+  },
   "lockTimeTooGreat": {
     "message": "Thời gian khóa quá lớn"
   },
@@ -2005,6 +2099,9 @@
   },
   "mismatchedNetworkSymbol": {
     "message": "Ký hiệu đơn vị tiền tệ đã gửi không khớp với những gì chúng tôi mong đợi cho ID chuỗi này."
+  },
+  "mismatchedRpcChainId": {
+    "message": "Mã chuỗi do mạng tùy chỉnh trả về không khớp với mã chuỗi đã gửi."
   },
   "mismatchedRpcUrl": {
     "message": "Theo hồ sơ của chúng tôi, giá trị RPC URL đã gửi không khớp với một nhà cung cấp đã biết cho ID chuỗi này."
@@ -2231,7 +2328,7 @@
     "message": "Chưa có NFT"
   },
   "noSnaps": {
-    "message": "Chưa cài đặt Snap nào"
+    "message": "Bạn chưa cài đặt bất kỳ Snap nào."
   },
   "noThanksVariant2": {
     "message": "Không, cảm ơn."
@@ -2327,11 +2424,41 @@
   "notifications15Title": {
     "message": "Hợp nhất Ethereum đã được triển khai!"
   },
+  "notifications16ActionText": {
+    "message": "Kích hoạt nhà cung cấp bảo mật"
+  },
+  "notifications16DescriptionOne": {
+    "message": "Nhận cảnh báo từ OpenSea bất cứ khi nào bạn nhận được một yêu cầu độc hại đã biết.",
+    "description": "Description of a notification in the 'See What's New' popup. Describes Opensea Security Provider feature."
+  },
+  "notifications16DescriptionThree": {
+    "message": "Nhớ luôn tự thẩm định trước khi phê duyệt bất kỳ yêu cầu nào.",
+    "description": "Description of a notification in the 'See What's New' popup. Describes Opensea Security Provider feature."
+  },
+  "notifications16DescriptionTwo": {
+    "message": "OpenSea là nhà cung cấp bảo mật đầu tiên cho tính năng này. Sắp có thêm nhiều nhà cung cấp khác!",
+    "description": "Description of a notification in the 'See What's New' popup. Describes Opensea Security Provider feature."
+  },
+  "notifications16Title": {
+    "message": "Đảm bảo an toàn với OpenSea"
+  },
   "notifications17ActionText": {
-    "message": "Hiển thị cài đặt Bảo mật và Quyền riêng tư"
+    "message": "Bật tự động phát hiện NFT"
+  },
+  "notifications17DescriptionOne": {
+    "message": "Hai cách để bạn có thể bắt đầu:",
+    "description": "Description of a notification in the 'See What's New' popup. Describes NFT autodetection feature."
+  },
+  "notifications17DescriptionThree": {
+    "message": "Hiện chúng tôi chỉ hỗ trợ ERC-721.",
+    "description": "Description of a notification in the 'See What's New' popup. Describes NFT autodetection feature."
+  },
+  "notifications17DescriptionTwo": {
+    "message": "Thêm NFT của bạn theo cách thủ công hoặc bật tính năng tự động phát hiện NFT trong phần Cài đặt > Thử nghiệm.",
+    "description": "Description of a notification in the 'See What's New' popup. Describes NFT autodetection feature."
   },
   "notifications17Title": {
-    "message": "Cài đặt Bảo mật và Quyền riêng tư"
+    "message": "Xem NFT của bạn theo cách mới mẻ nhất"
   },
   "notifications1Description": {
     "message": "Giờ đây, người dùng MetaMask trên điện thoại di động có thể hoán đổi token trong ví di động của họ. Quét mã QR để tải ứng dụng di động và bắt đầu hoán đổi.",
@@ -2586,6 +2713,9 @@
   "onlyConnectTrust": {
     "message": "Chỉ kết nối với các trang web mà bạn tin tưởng."
   },
+  "openCodefiCompliance": {
+    "message": "Mở Codefi Compliance"
+  },
   "openFullScreenForLedgerWebHid": {
     "message": "Mở MetaMask ở chế độ toàn màn hình để kết nối thiết bị Ledger của bạn qua WebHID.",
     "description": "Shown to the user on the confirm screen when they are viewing MetaMask in a popup window but need to connect their ledger via webhid."
@@ -2695,21 +2825,41 @@
     "message": "Truy cập Internet.",
     "description": "The description of the `endowment:network-access` permission."
   },
+  "permission_accessNetworkDescription": {
+    "message": "Cho phép Snap truy cập Internet. Điều này có thể được sử dụng để gửi và nhận dữ liệu với máy chủ của bên thứ ba.",
+    "description": "An extended description of the `endowment:network-access` permission."
+  },
   "permission_accessSnap": {
     "message": "Kết nối với Snap $1.",
     "description": "The description for the `wallet_snap` permission. $1 is the name of the snap."
+  },
+  "permission_accessSnapDescription": {
+    "message": "Cho phép trang web hoặc Snap tương tác với $1.",
+    "description": "The description for the `wallet_snap_*` permission. $1 is the name of the Snap."
   },
   "permission_cronjob": {
     "message": "Lên lịch và thực hiện các hành động theo định kỳ.",
     "description": "The description for the `snap_cronjob` permission"
   },
+  "permission_cronjobDescription": {
+    "message": "Cho phép Snap thực hiện các hành động định kỳ vào thời gian, ngày hoặc khoảng thời gian cố định. Điều này có thể được sử dụng để kích hoạt các tương tác hoặc thông báo nhạy cảm với thời gian.",
+    "description": "An extended description for the `snap_cronjob` permission"
+  },
   "permission_customConfirmation": {
     "message": "Hiển thị xác nhận trong MetaMask.",
     "description": "The description for the `snap_confirm` permission"
   },
+  "permission_customConfirmationDescription": {
+    "message": "Cho phép Snap hiển thị cửa sổ bật lên MetaMask cùng với văn bản tùy chỉnh và nút để chấp nhận hoặc từ chối một hành động.",
+    "description": "An extended description for the `snap_confirm` permission"
+  },
   "permission_dialog": {
     "message": "Hiển thị cửa sổ hộp thoại trong MetaMask.",
     "description": "The description for the `snap_dialog` permission"
+  },
+  "permission_dialogDescription": {
+    "message": "Cho phép Snap hiển thị cửa sổ bật lên MetaMask cùng với văn bản tùy chỉnh, trường nhập và nút để chấp nhận hoặc từ chối một hành động.\nCó thể được sử dụng để tạo cảnh báo, xác nhận và quy trình đồng ý tham gia cho một Snap.",
+    "description": "An extended description for the `snap_dialog` permission"
   },
   "permission_ethereumAccounts": {
     "message": "Xem địa chỉ, số dư tài khoản, hoạt động và bắt đầu giao dịch",
@@ -2719,21 +2869,41 @@
     "message": "Truy cập nhà cung cấp Ethereum.",
     "description": "The description for the `endowment:ethereum-provider` permission"
   },
+  "permission_ethereumProviderDescription": {
+    "message": "Cho phép Snap giao tiếp trực tiếp với MetaMask để đọc dữ liệu từ chuỗi khối và đề xuất các tin nhắn và giao dịch.",
+    "description": "An extended description for the `endowment:ethereum-provider` permission"
+  },
   "permission_getEntropy": {
     "message": "Lấy các khóa tùy ý duy nhất cho snap này.",
     "description": "The description for the `snap_getEntropy` permission"
+  },
+  "permission_getEntropyDescription": {
+    "message": "Cho phép Snap lấy các khóa tùy ý duy nhất cho Snap này mà không để lộ. Các khóa này tách biệt với tài khoản MetaMask của bạn và không liên quan đến khóa riêng tư hoặc Cụm từ khôi phục bí mật của bạn. Các Snap khác không thể truy cập thông tin này.",
+    "description": "An extended description for the `snap_getEntropy` permission"
   },
   "permission_longRunning": {
     "message": "Chạy không giới hạn.",
     "description": "The description for the `endowment:long-running` permission"
   },
+  "permission_longRunningDescription": {
+    "message": "Ví dụ: cho phép Snap chạy vô thời hạn trong quá trình xử lý lượng lớn dữ liệu.",
+    "description": "An extended description for the `endowment:long-running` permission"
+  },
   "permission_manageBip32Keys": {
     "message": "Kiểm soát các tài khoản và tài sản của bạn ở $1 ($2).",
     "description": "The description for the `snap_getBip32Entropy` permission. $1 is a derivation path, e.g. 'm/44'/0'/0''. $2 is the elliptic curve name, e.g. 'secp256k1'."
   },
+  "permission_manageBip32KeysDescription": {
+    "message": "Cho phép Snap lấy các cặp khóa BIP-32 dựa trên Cụm từ khôi phục bí mật của bạn mà không để lộ. Điều này sẽ cấp toàn quyền truy cập vào tất cả các tài khoản và tài sản trên $1.\nVới khả năng quản lý khóa, Snap có thể hỗ trợ nhiều giao thức chuỗi khối ngoài Ethereum (EVM).",
+    "description": "An extended description for the `snap_getBip32Entropy` permission. $1 is a derivation path (name)"
+  },
   "permission_manageBip44Keys": {
     "message": "Kiểm soát các tài khoản và tài sản \"$1\" của bạn.",
     "description": "The description for the `snap_getBip44Entropy` permission. $1 is the name of a protocol, e.g. 'Filecoin'."
+  },
+  "permission_manageBip44KeysDescription": {
+    "message": "Cho phép Snap lấy các cặp khóa BIP-44 dựa trên Cụm từ khôi phục bí mật của bạn mà không để lộ. Điều này sẽ cấp toàn quyền truy cập vào tất cả các tài khoản và tài sản trên $1.\nVới khả năng quản lý khóa, Snap có thể hỗ trợ nhiều giao thức chuỗi khối ngoài Ethereum (EVM).",
+    "description": "An extended description for the `snap_getBip44Entropy` permission. $1 is the name of a protocol, e.g., 'Filecoin'."
   },
   "permission_manageNamedBip32Keys": {
     "message": "Kiểm soát các tài khoản và tài sản $1 của bạn.",
@@ -2743,21 +2913,41 @@
     "message": "Lưu trữ và quản lý dữ liệu trong thiết bị.",
     "description": "The description for the `snap_manageState` permission"
   },
+  "permission_manageStateDescription": {
+    "message": "Cho phép Snap lưu trữ, cập nhật và truy xuất dữ liệu một cách an toàn bằng mã hóa. Các Snap khác không thể truy cập thông tin này.",
+    "description": "An extended description for the `snap_manageState` permission"
+  },
   "permission_notifications": {
     "message": "Hiển thị thông báo.",
     "description": "The description for the `snap_notify` permission"
+  },
+  "permission_notificationsDescription": {
+    "message": "Cho phép Snap hiển thị thông báo trong MetaMask. Một văn bản thông báo ngắn có thể được kích hoạt bằng Snap đối với thông tin có thể thao tác hoặc nhạy cảm với thời gian.",
+    "description": "An extended description for the `snap_notify` permission"
   },
   "permission_rpc": {
     "message": "Cho phép $1 giao tiếp trực tiếp với snap này.",
     "description": "The description for the `endowment:rpc` permission. $1 is 'other snaps' or 'websites'."
   },
+  "permission_rpcDescription": {
+    "message": "Cho phép $1 gửi tin nhắn đến Snap và nhận phản hồi từ Snap.",
+    "description": "An extended description for the `endowment:rpc` permission. $1 is 'other snaps' or 'websites'."
+  },
   "permission_transactionInsight": {
     "message": "Tìm nạp và hiển thị thông tin chi tiết về giao dịch.",
     "description": "The description for the `endowment:transaction-insight` permission"
   },
+  "permission_transactionInsightDescription": {
+    "message": "Cho phép Snap giải mã các giao dịch và hiển thị thông tin chi tiết trong giao diện người dùng MetaMask. Điều này có thể được sử dụng cho các giải pháp bảo mật và chống lừa đảo.",
+    "description": "An extended description for the `endowment:transaction-insight` permission"
+  },
   "permission_transactionInsightOrigin": {
     "message": "Xem nguồn gốc của các trang web đề xuất giao dịch",
     "description": "The description for the `transactionOrigin` caveat, to be used with the `endowment:transaction-insight` permission"
+  },
+  "permission_transactionInsightOriginDescription": {
+    "message": "Cho phép Snap để xem nguồn gốc (URI) của các trang web đề xuất giao dịch. Điều này có thể được sử dụng cho các giải pháp bảo mật và chống lừa đảo.",
+    "description": "An extended description for the `transactionOrigin` caveat, to be used with the `endowment:transaction-insight` permission"
   },
   "permission_unknown": {
     "message": "Quyền không xác định: $1",
@@ -2767,9 +2957,21 @@
     "message": "Xem khóa công khai của bạn cho $1 ($2).",
     "description": "The description for the `snap_getBip32PublicKey` permission. $1 is a derivation path, e.g. 'm/44'/0'/0''. $2 is the elliptic curve name, e.g. 'secp256k1'."
   },
+  "permission_viewBip32PublicKeysDescription": {
+    "message": "Cho phép Snap xem khóa công khai (và địa chỉ) của bạn đối với $1. Điều này sẽ không cấp bất kỳ quyền kiểm soát tài khoản hoặc tài sản nào.",
+    "description": "An extended description for the `snap_getBip32PublicKey` permission. $1 is a derivation path (name)"
+  },
   "permission_viewNamedBip32PublicKeys": {
     "message": "Xem khóa công khai của bạn cho $1.",
     "description": "The description for the `snap_getBip32PublicKey` permission. $1 is a name for the derivation path, e.g., 'Ethereum accounts'."
+  },
+  "permission_webAssembly": {
+    "message": "Hỗ trợ dành cho WebAssembly.",
+    "description": "The description of the `endowment:webassembly` permission."
+  },
+  "permission_webAssemblyDescription": {
+    "message": "Cho phép Snap truy cập vào các môi trường thực thi cấp thấp thông qua WebAssembly.",
+    "description": "An extended description of the `endowment:webassembly` permission."
   },
   "permissions": {
     "message": "Quyền"
@@ -2789,6 +2991,9 @@
   },
   "portfolio": {
     "message": "Danh mục đầu tư"
+  },
+  "portfolioView": {
+    "message": "Chế độ xem danh mục đầu tư"
   },
   "preferredLedgerConnectionType": {
     "message": "Dạng kết nối Ledger ưu tiên",
@@ -2946,6 +3151,9 @@
   "replace": {
     "message": "thay thế"
   },
+  "requestFailed": {
+    "message": "Yêu cầu không thành công"
+  },
   "requestFlaggedAsMaliciousFallbackCopyReason": {
     "message": "Nhà cung cấp bảo mật chưa chia sẻ thêm thông tin chi tiết"
   },
@@ -3047,15 +3255,23 @@
     "message": "Hiện cụm từ khôi phục bí mật"
   },
   "reviewSpendingCap": {
-    "message": "Xem lại hạn mức chi tiêu của bạn"
+    "message": "Xem lại hạn mức chi tiêu cho"
   },
   "revokeAllTokensTitle": {
     "message": "Thu hồi quyền truy cập và chuyển tất cả $1 của bạn?",
     "description": "$1 is the symbol of the token for which the user is revoking approval"
   },
+  "revokeAllTokensTitleWithoutSymbol": {
+    "message": "Thu hồi quyền truy cập và chuyển tất cả NFT của bạn từ $1?",
+    "description": "$1 is a link to contract on the block explorer when we're not able to retrieve a erc721 or erc1155 name"
+  },
   "revokeApproveForAllDescription": {
     "message": "Hành động này sẽ thu hồi quyền cho phép bên thứ ba truy cập và chuyển tất cả $1 của bạn mà không cần thông báo thêm.",
     "description": "$1 is either a string or link of a given token symbol or name"
+  },
+  "revokeApproveForAllDescriptionWithoutSymbol": {
+    "message": "Hành động này sẽ thu hồi quyền cho phép bên thứ ba truy cập và chuyển tất cả NFT của bạn từ $1 mà không cần thông báo thêm.",
+    "description": "$1 is a link to contract on the block explorer when we're not able to retrieve a erc721 or erc1155 name"
   },
   "revokeSpendingCap": {
     "message": "Thu hồi hạn mức chi tiêu cho $1 của bạn",
@@ -3177,6 +3393,9 @@
   },
   "selectHdPath": {
     "message": "Chọn đường dẫn HD"
+  },
+  "selectJWT": {
+    "message": "Chọn token"
   },
   "selectNFTPrivacyPreference": {
     "message": "Bật phát hiện NFT trong phần Cài Đặt"
@@ -3339,18 +3558,50 @@
   "snapInstall": {
     "message": "Cài đặt Snap"
   },
+  "snapInstallRequest": {
+    "message": "$1 muốn cài đặt $2. Đảm bảo bạn tin tưởng các tác giả trước khi tiếp tục.",
+    "description": "$1 is the dApp origin requesting the snap and $2 is the snap name"
+  },
+  "snapInstallRequestsPermission": {
+    "message": "$1 muốn cài đặt $2 và đang yêu cầu các quyền sau. Đảm bảo bạn tin tưởng các tác giả trước khi tiếp tục.",
+    "description": "$1 is the dApp origin requesting the snap and $2 is the snap name"
+  },
   "snapInstallWarningCheck": {
-    "message": "Để xác nhận rằng bạn hiểu, hãy đánh dấu vào ô."
+    "message": "Đảm bảo quyền bên dưới phù hợp với hành động dự định của bạn. Chỉ tiếp tục khi gặp các tác giả mà bạn tin tưởng."
   },
   "snapInstallWarningCheckPlural": {
-    "message": "Để xác nhận rằng bạn hiểu, hãy đánh dấu vào tất cả các ô."
+    "message": "Đảm bảo các quyền bên dưới phù hợp với hành động dự định của bạn. Chỉ tiếp tục khi gặp các tác giả mà bạn tin tưởng."
+  },
+  "snapInstallWarningHeading": {
+    "message": "Hãy tiến hành thận trọng"
   },
   "snapInstallWarningKeyAccess": {
     "message": "Bạn đang cấp quyền truy cập khóa $2 cho Snap \"$1\". Hành động này không thể hủy bỏ và sẽ cấp quyền kiểm soát tài khoản và tài sản $2 của bạn cho \"$1\". Đảm bảo bạn tin tưởng \"$1\" trước khi tiếp tục.",
     "description": "The first parameter is the name of the snap and the second one is the protocol"
   },
+  "snapInstallWarningPublicKeyAccess": {
+    "message": "Cấp quyền truy cập $1 cho khóa công khai $2",
+    "description": "The first parameter is the name of the snap and the second one is the protocol"
+  },
+  "snapResultError": {
+    "message": "Lỗi"
+  },
+  "snapResultSuccess": {
+    "message": "Thành công"
+  },
+  "snapResultSuccessDescription": {
+    "message": "$1 hiện có sẵn để sử dụng."
+  },
   "snapUpdate": {
     "message": "Cập nhật Snap"
+  },
+  "snapUpdateRequest": {
+    "message": "$1 muốn cập nhật $2. Đảm bảo bạn tin tưởng các tác giả trước khi tiếp tục.",
+    "description": "$1 is the dApp origin requesting the snap and $2 is the snap name"
+  },
+  "snapUpdateRequestsPermission": {
+    "message": "$1 muốn cập nhật $2 và đang yêu cầu các quyền sau. Đảm bảo bạn tin tưởng các tác giả trước khi tiếp tục.",
+    "description": "$1 is the dApp origin requesting the snap and $2 is the snap name"
   },
   "snaps": {
     "message": "Snap"
@@ -3813,7 +4064,7 @@
     "message": "Chọn một báo giá"
   },
   "swapSelectAToken": {
-    "message": "Chọn một token"
+    "message": "Chọn token"
   },
   "swapSelectQuotePopoverDescription": {
     "message": "Dưới đây là tất cả các báo giá thu thập từ nhiều nguồn thanh khoản."
@@ -3996,6 +4247,9 @@
   },
   "thingsToKeep": {
     "message": "Những điều cần lưu ý:"
+  },
+  "thisCollection": {
+    "message": "bộ sưu tập này"
   },
   "thisIsBasedOn": {
     "message": "Điều này dựa trên thông tin từ "
@@ -4288,6 +4542,9 @@
   "upArrow": {
     "message": "mũi tên lên"
   },
+  "update": {
+    "message": "Cập nhật"
+  },
   "updatedWithDate": {
     "message": "Đã cập nhật $1"
   },
@@ -4382,6 +4639,9 @@
   "viewOnEtherscan": {
     "message": "Xem $1 trên Etherscan",
     "description": "$1 is the action type. e.g (Account, Transaction, Swap)"
+  },
+  "viewOnExplorer": {
+    "message": "Xem trên trình khám phá"
   },
   "viewOnOpensea": {
     "message": "Xem trên Opensea"

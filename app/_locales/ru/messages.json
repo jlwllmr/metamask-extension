@@ -150,6 +150,9 @@
   "accountSelectionRequired": {
     "message": "Вам необходимо выбрать счет!"
   },
+  "activated": {
+    "message": "Активный"
+  },
   "active": {
     "message": "Активный"
   },
@@ -170,6 +173,9 @@
   },
   "addANickname": {
     "message": "Добавить ник"
+  },
+  "addAccount": {
+    "message": "Добавить счет"
   },
   "addAcquiredTokens": {
     "message": "Добавьте токены, которые вы приобрели с помощью MetaMask"
@@ -257,11 +263,17 @@
     "message": "Это сетевое подключение зависит от третьих сторон. Оно может быть менее надежным или позволять третьим лицам отслеживать активность. $1",
     "description": "$1 is Learn more link"
   },
+  "addNewToken": {
+    "message": "Добавить новый токен"
+  },
   "addSuggestedTokens": {
     "message": "Добавить рекомендованные токены"
   },
   "addToken": {
     "message": "Добавить токен"
+  },
+  "addingCustomNetwork": {
+    "message": "Добавление сети"
   },
   "address": {
     "message": "Адрес"
@@ -315,6 +327,10 @@
     "message": "Все ваши $1",
     "description": "$1 is the symbol or name of the token that the user is approving spending"
   },
+  "allYourNFTsOf": {
+    "message": "Все ваши NFT из $1",
+    "description": "$1 is a link to contract on the block explorer when we're not able to retrieve a erc721 or erc1155 name"
+  },
   "allowExternalExtensionTo": {
     "message": "Разрешить этому внешнему расширению:"
   },
@@ -359,6 +375,10 @@
     "message": "Разрешить доступ ко всем вашим $1?",
     "description": "$1 is the symbol of the token for which the user is granting approval"
   },
+  "approveAllTokensTitleWithoutSymbol": {
+    "message": "Разрешить доступ к вашим NFT из $1 и перевести их?",
+    "description": "$1 a link to contract on the block explorer when we're not able to retrieve a erc721 or erc1155 name"
+  },
   "approveAndInstall": {
     "message": "Одобрить и установить"
   },
@@ -374,6 +394,10 @@
   },
   "approveTokenDescription": {
     "message": "Это позволяет третьей стороне получать доступ и передавать следующие NFT без дополнительного уведомления, пока вы не отзовете ее доступ."
+  },
+  "approveTokenDescriptionWithoutSymbol": {
+    "message": "Это позволяет третьей стороне получать доступ и передавать все ваши NFT из $1 без дополнительного уведомления, пока вы не закроете ей доступ.",
+    "description": "$1 is a link to contract on the block explorer when we're not able to retrieve a erc721 or erc1155 name"
   },
   "approveTokenTitle": {
     "message": "Разрешить доступ и перевод ваших $1?",
@@ -512,6 +536,9 @@
   "blockies": {
     "message": "«Блокиз»"
   },
+  "bridge": {
+    "message": "Мост"
+  },
   "browserNotSupported": {
     "message": "Ваш браузер не поддерживается..."
   },
@@ -615,8 +642,38 @@
   "close": {
     "message": "Закрыть"
   },
+  "codefiCompliance": {
+    "message": "Codefi Compliance"
+  },
   "coingecko": {
     "message": "CoinGecko"
+  },
+  "complianceBlurb0": {
+    "message": "DeFi повышает риск БОД/ФТ для учреждений, учитывая децентрализованные пулы и контрагентов с псевдонимами."
+  },
+  "complianceBlurb1": {
+    "message": "Codefi Compliance — единственный продукт, способный выполнять анализ БОД/ФТв пулах DeFi. Он позволяет вам выявлять и избегать пулов и контрагентов, которые не соответствуют вашим настройкам риска."
+  },
+  "complianceBlurbStep1": {
+    "message": "Зарегистрируйтесь в Codefi Compliance ниже"
+  },
+  "complianceBlurbStep2": {
+    "message": "Создать организацию"
+  },
+  "complianceBlurbStep3": {
+    "message": "Создать проект"
+  },
+  "complianceBlurbStep4": {
+    "message": "Задайте свои настройки соответствия"
+  },
+  "complianceBlurbStep5": {
+    "message": "Нажмите кнопку «Включить соответствие в MMI»"
+  },
+  "complianceBlurpStep0": {
+    "message": "Шаги для обеспечения соответствия БОД/ФТ:"
+  },
+  "complianceSettingsExplanation": {
+    "message": "Измените настройки или просмотрите отчеты, открыв Codefi Compliance или отключившись ниже."
   },
   "confirm": {
     "message": "Подтвердить"
@@ -1302,8 +1359,15 @@
     "message": "Стек:",
     "description": "Title for error stack, which is displayed for debugging purposes"
   },
+  "errorWhileConnectingToRPC": {
+    "message": "Ошибка при подключении к пользовательской сети."
+  },
   "ethGasPriceFetchWarning": {
     "message": "Указана резервная цена газа, поскольку основной сервис определения цены газа сейчас недоступен."
+  },
+  "ethereumProviderAccess": {
+    "message": "Предоставить поставщику Ethereum доступ к $1",
+    "description": "The parameter is the name of the requesting origin"
   },
   "ethereumPublicAddress": {
     "message": "Открытый адрес Ethereum"
@@ -1323,8 +1387,14 @@
   "experimental": {
     "message": "Экспериментальный"
   },
+  "exploreMetaMaskSnaps": {
+    "message": "Обзор привязок MetaMask"
+  },
   "exportPrivateKey": {
     "message": "Экспорт закрытого ключа"
+  },
+  "extendWalletWithSnaps": {
+    "message": "Расширьте возможности кошелька."
   },
   "externalExtension": {
     "message": "Внешнее расширение"
@@ -1354,6 +1424,9 @@
   "fileImportFail": {
     "message": "Импорт файлов не работает? Нажмите здесь!",
     "description": "Helps user import their account from a JSON file"
+  },
+  "fileTooBig": {
+    "message": "Добавленный файл слишком велик."
   },
   "flaskSnapSettingsCardButtonCta": {
     "message": "См. подробности",
@@ -1531,6 +1604,9 @@
   "hardware": {
     "message": "Аппаратный"
   },
+  "hardwareWallet": {
+    "message": "Аппаратный кошелек"
+  },
   "hardwareWalletConnected": {
     "message": "Аппаратный кошелек подключен"
   },
@@ -1631,8 +1707,23 @@
   "importAccountError": {
     "message": "Ошибка импорта счета."
   },
+  "importAccountErrorIsSRP": {
+    "message": "Вы ввели секретную фразу для восстановления (или мнемоническую фразу). Чтобы импортировать счет сюда, нужно ввести закрытый ключ, который представляет собой шестнадцатеричную строку длиной 64 символа."
+  },
+  "importAccountErrorNotAValidPrivateKey": {
+    "message": "Это недействительный закрытый ключ. Вы ввели шестнадцатеричную строку, но она должна содержать 64 символа."
+  },
+  "importAccountErrorNotHexadecimal": {
+    "message": "Это недействительный закрытый ключ. Вам нужно ввести шестнадцатеричную строку длиной 64 символа."
+  },
+  "importAccountJsonLoading1": {
+    "message": "Ожидайте, что этот импорт JSON займет несколько минут и заблокирует MetaMask."
+  },
+  "importAccountJsonLoading2": {
+    "message": "Мы приносим свои извинения, и мы сделаем это быстрее в будущем."
+  },
   "importAccountMsg": {
-    "message": "Импортированные счета не будут связаны с секретной фразой для восстановления вашего изначально созданного счета MetaMask. Узнайте больше об импортированных счетах"
+    "message": "Импортированные счета не будут связаны с вашей секретной фразой для восстановления MetaMask. Узнайте больше об импортированных счетах"
   },
   "importMyWallet": {
     "message": "Импорт моего кошелька"
@@ -1913,6 +2004,9 @@
   "lock": {
     "message": "Заблокировать"
   },
+  "lockMetaMask": {
+    "message": "Заблокировать MetaMask"
+  },
   "lockTimeTooGreat": {
     "message": "Время блокировки слишком велико"
   },
@@ -2005,6 +2099,9 @@
   },
   "mismatchedNetworkSymbol": {
     "message": "Представленный символ валюты не соответствует тому, что мы ожидаем для этого идентификатора блокчейна."
+  },
+  "mismatchedRpcChainId": {
+    "message": "Идентификатор блокчейна, возвращенный пользовательской сетью, не соответствует отправленному идентификатору блокчейна."
   },
   "mismatchedRpcUrl": {
     "message": "Согласно нашим записям, отправленное значение URL-адреса RPC не соответствует известному поставщику для этого идентификатора блокчейна."
@@ -2231,7 +2328,7 @@
     "message": "Пока нет NFT-токенов"
   },
   "noSnaps": {
-    "message": "Снапы не установлены"
+    "message": "Привязки не установлены."
   },
   "noThanksVariant2": {
     "message": "Нет, спасибо."
@@ -2327,11 +2424,41 @@
   "notifications15Title": {
     "message": "Ethereum Merge уже досутпно!"
   },
+  "notifications16ActionText": {
+    "message": "Включить поставщика услуг безопасности"
+  },
+  "notifications16DescriptionOne": {
+    "message": "Получайте предупреждения от OpenSea всякий раз, когда вы получаете заведомо вредоносный запрос.",
+    "description": "Description of a notification in the 'See What's New' popup. Describes Opensea Security Provider feature."
+  },
+  "notifications16DescriptionThree": {
+    "message": "Всегда обязательно проводите собственную комплексную проверку, прежде чем утверждать какие-либо запросы.",
+    "description": "Description of a notification in the 'See What's New' popup. Describes Opensea Security Provider feature."
+  },
+  "notifications16DescriptionTwo": {
+    "message": "OpenSea является первым поставщиком услуг безопасности для этой функции. Скоро появятся новые поставщики!",
+    "description": "Description of a notification in the 'See What's New' popup. Describes Opensea Security Provider feature."
+  },
+  "notifications16Title": {
+    "message": "Оставайтесь в безопасности с OpenSea"
+  },
   "notifications17ActionText": {
-    "message": "Показать настройки безопасности и конфиденциальности"
+    "message": "Включить автоопределение NFT"
+  },
+  "notifications17DescriptionOne": {
+    "message": "Два способа начать работу:",
+    "description": "Description of a notification in the 'See What's New' popup. Describes NFT autodetection feature."
+  },
+  "notifications17DescriptionThree": {
+    "message": "На данный момент мы поддерживаем только ERC-721.",
+    "description": "Description of a notification in the 'See What's New' popup. Describes NFT autodetection feature."
+  },
+  "notifications17DescriptionTwo": {
+    "message": "Добавьте свои NFT вручную или включите автоматическое определение NFT в меню «Настройки» > «Экспериментальное».",
+    "description": "Description of a notification in the 'See What's New' popup. Describes NFT autodetection feature."
   },
   "notifications17Title": {
-    "message": "Настройки безопасности и конфиденциальности"
+    "message": "Смотрите свои NFT, как никогда раньше"
   },
   "notifications1Description": {
     "message": "Теперь пользователи MetaMask Mobile могут обменивать токены в своем мобильном кошельке. Отсканируйте QR-код, чтобы скачать мобильное приложение и начать обмен.",
@@ -2586,6 +2713,9 @@
   "onlyConnectTrust": {
     "message": "Подключайтесь только к сайтам, которым доверяете."
   },
+  "openCodefiCompliance": {
+    "message": "Открыть Codefi Compliance"
+  },
   "openFullScreenForLedgerWebHid": {
     "message": "Откройте MetaMask в полноэкранном режиме, чтобы подключить свой леджер через WebHID.",
     "description": "Shown to the user on the confirm screen when they are viewing MetaMask in a popup window but need to connect their ledger via webhid."
@@ -2695,21 +2825,41 @@
     "message": "Доступ в Интернет.",
     "description": "The description of the `endowment:network-access` permission."
   },
+  "permission_accessNetworkDescription": {
+    "message": "Разрешите привязке доступ к Интернету. Ее можно использовать как для отправки, так и для получения данных со сторонних серверов.",
+    "description": "An extended description of the `endowment:network-access` permission."
+  },
   "permission_accessSnap": {
     "message": "Подключение к спапу $1.",
     "description": "The description for the `wallet_snap` permission. $1 is the name of the snap."
+  },
+  "permission_accessSnapDescription": {
+    "message": "Разрешите веб-сайту и привязке взаимодействовать с $1.",
+    "description": "The description for the `wallet_snap_*` permission. $1 is the name of the Snap."
   },
   "permission_cronjob": {
     "message": "Планируйте и выполняйте периодические действия.",
     "description": "The description for the `snap_cronjob` permission"
   },
+  "permission_cronjobDescription": {
+    "message": "Разрешите привязке выполнять действия, которые выполняются периодически в фиксированное время, даты или интервалы. Это можно использовать для запуска срочных взаимодействий или уведомлений.",
+    "description": "An extended description for the `snap_cronjob` permission"
+  },
   "permission_customConfirmation": {
     "message": "Показать подтверждение в MetaMask.",
     "description": "The description for the `snap_confirm` permission"
   },
+  "permission_customConfirmationDescription": {
+    "message": "Разрешите привязке отображать всплывающие окна MetaMask с настраиваемым текстом и кнопками для подтверждения или отклонения действия.",
+    "description": "An extended description for the `snap_confirm` permission"
+  },
   "permission_dialog": {
     "message": "Отображение диалоговых окон в MetaMask.",
     "description": "The description for the `snap_dialog` permission"
+  },
+  "permission_dialogDescription": {
+    "message": "Разрешите привязке отображать всплывающие окна MetaMask с настраиваемым текстом, полем ввода и кнопками для подтверждения или отклонения действия.\nМожет использоваться для создания, например, оповещения, подтверждения и процедуры получения согласия для привязки.",
+    "description": "An extended description for the `snap_dialog` permission"
   },
   "permission_ethereumAccounts": {
     "message": "См. адрес, баланс счета, активность и инициируйте транзакции",
@@ -2719,21 +2869,41 @@
     "message": "Получите доступ к поставщику Ethereum.",
     "description": "The description for the `endowment:ethereum-provider` permission"
   },
+  "permission_ethereumProviderDescription": {
+    "message": "Разрешите привязке связываться с MetaMask напрямую, чтобы она могла считывать данные из блокчейна и предлагать сообщения и транзакции.",
+    "description": "An extended description for the `endowment:ethereum-provider` permission"
+  },
   "permission_getEntropy": {
     "message": "Извлекайте произвольные ключи, уникальные для этой привязки.",
     "description": "The description for the `snap_getEntropy` permission"
+  },
+  "permission_getEntropyDescription": {
+    "message": "Разрешите привязке получать произвольные ключи, уникальные для этой привязки, не раскрывая их. Эти ключи отделены от вашего(-их) счета(-ов) MetaMask и не связаны с вашими закрытыми ключами или секретной фразой для восстановления. Другие привязки не могут получить доступ к этой информации.",
+    "description": "An extended description for the `snap_getEntropy` permission"
   },
   "permission_longRunning": {
     "message": "Выполнять бесконечно.",
     "description": "The description for the `endowment:long-running` permission"
   },
+  "permission_longRunningDescription": {
+    "message": "Разрешите привязке работать бесконечно, например, при обработке больших объемов данных.",
+    "description": "An extended description for the `endowment:long-running` permission"
+  },
   "permission_manageBip32Keys": {
     "message": "Контролируйте свои счета и активы в $1 ($2).",
     "description": "The description for the `snap_getBip32Entropy` permission. $1 is a derivation path, e.g. 'm/44'/0'/0''. $2 is the elliptic curve name, e.g. 'secp256k1'."
   },
+  "permission_manageBip32KeysDescription": {
+    "message": "Разрешите привязке получать пары ключей BIP-32 на основе вашей секретной фразы для восстановления, не раскрывая ее. Это дает полный доступ ко всем счетам и активам на $1.\nБлагодаря способности управлять ключами, привязка может поддерживать множество протоколов блокчейна, кроме Ethereum (EVM).",
+    "description": "An extended description for the `snap_getBip32Entropy` permission. $1 is a derivation path (name)"
+  },
   "permission_manageBip44Keys": {
     "message": "Контролируйте свои счета и активы «$1».",
     "description": "The description for the `snap_getBip44Entropy` permission. $1 is the name of a protocol, e.g. 'Filecoin'."
+  },
+  "permission_manageBip44KeysDescription": {
+    "message": "Разрешите привязке получать пары ключей BIP-44 на основе вашей секретной фразы для восстановления, не раскрывая ее. Это дает полный доступ ко всем счетам и активам на $1.\nБлагодаря способности управлять ключами привязка может поддерживать множество протоколов блокчейна, кроме Ethereum (EVM).",
+    "description": "An extended description for the `snap_getBip44Entropy` permission. $1 is the name of a protocol, e.g., 'Filecoin'."
   },
   "permission_manageNamedBip32Keys": {
     "message": "Контролируйте свои счета и активы $1.",
@@ -2743,21 +2913,41 @@
     "message": "Храните и управляйте его данными на вашем устройстве.",
     "description": "The description for the `snap_manageState` permission"
   },
+  "permission_manageStateDescription": {
+    "message": "Разрешите привязке безопасно хранить, обновлять и извлекать данные с помощью шифрования. Другие привязки не могут получить доступ к этой информации.",
+    "description": "An extended description for the `snap_manageState` permission"
+  },
   "permission_notifications": {
     "message": "Показать уведомления.",
     "description": "The description for the `snap_notify` permission"
+  },
+  "permission_notificationsDescription": {
+    "message": "Разрешите привязке отображать уведомления в MetaMask. Текст короткого уведомления может отображаться привязкой для получения информации, требующей действий, или срочной информации.",
+    "description": "An extended description for the `snap_notify` permission"
   },
   "permission_rpc": {
     "message": "Разрешите $1 напрямую взаимодействовать с этой привязкой.",
     "description": "The description for the `endowment:rpc` permission. $1 is 'other snaps' or 'websites'."
   },
+  "permission_rpcDescription": {
+    "message": "Разрешите $1 отправлять сообщения приявзке и получать ответ от привязки.",
+    "description": "An extended description for the `endowment:rpc` permission. $1 is 'other snaps' or 'websites'."
+  },
   "permission_transactionInsight": {
     "message": "Получайте и отображайте подробную информацию о транзакциях.",
     "description": "The description for the `endowment:transaction-insight` permission"
   },
+  "permission_transactionInsightDescription": {
+    "message": "Разрешите привязке декодировать транзакции и показывать информацию в пользовательском интерфейсе MetaMask. Это можно использовать для защиты от фишинга и обеспечения безопасности.",
+    "description": "An extended description for the `endowment:transaction-insight` permission"
+  },
   "permission_transactionInsightOrigin": {
     "message": "Смотрите происхождение веб-сайтов, которые предлагают транзакции",
     "description": "The description for the `transactionOrigin` caveat, to be used with the `endowment:transaction-insight` permission"
+  },
+  "permission_transactionInsightOriginDescription": {
+    "message": "Разрешить привязке видеть происхождение (URI) веб-сайтов, предлагающих транзакции. Это можно использовать для защиты от фишинга и обеспечения безопасности.",
+    "description": "An extended description for the `transactionOrigin` caveat, to be used with the `endowment:transaction-insight` permission"
   },
   "permission_unknown": {
     "message": "Неизвестное разрешение: $1",
@@ -2767,9 +2957,21 @@
     "message": "Просмотрите свой открытый ключ для $1 ($2).",
     "description": "The description for the `snap_getBip32PublicKey` permission. $1 is a derivation path, e.g. 'm/44'/0'/0''. $2 is the elliptic curve name, e.g. 'secp256k1'."
   },
+  "permission_viewBip32PublicKeysDescription": {
+    "message": "Разрешите привязке просматривать ваши открытые ключи (и адреса) для $1. Это не дает никакого контроля над счетами или активами.",
+    "description": "An extended description for the `snap_getBip32PublicKey` permission. $1 is a derivation path (name)"
+  },
   "permission_viewNamedBip32PublicKeys": {
     "message": "Просмотрите свой открытый ключ для $1.",
     "description": "The description for the `snap_getBip32PublicKey` permission. $1 is a name for the derivation path, e.g., 'Ethereum accounts'."
+  },
+  "permission_webAssembly": {
+    "message": "Поддержка WebAssembly.",
+    "description": "The description of the `endowment:webassembly` permission."
+  },
+  "permission_webAssemblyDescription": {
+    "message": "Разрешите привязке доступ к низкоуровневым средам выполнения через WebAssembly.",
+    "description": "An extended description of the `endowment:webassembly` permission."
   },
   "permissions": {
     "message": "Разрешения"
@@ -2789,6 +2991,9 @@
   },
   "portfolio": {
     "message": "Портфель"
+  },
+  "portfolioView": {
+    "message": "Представление портфеля"
   },
   "preferredLedgerConnectionType": {
     "message": "Предпочтительный тип подключения к леджеру",
@@ -2946,6 +3151,9 @@
   "replace": {
     "message": "заменить"
   },
+  "requestFailed": {
+    "message": "Запрос не выполнен"
+  },
   "requestFlaggedAsMaliciousFallbackCopyReason": {
     "message": "Поставщик услуг безопасности не поделился дополнительной информацией"
   },
@@ -3047,15 +3255,23 @@
     "message": "Показать сид-фразу"
   },
   "reviewSpendingCap": {
-    "message": "Проверьте свой лимит расходов"
+    "message": "Проверьте лимит расходов для своего"
   },
   "revokeAllTokensTitle": {
     "message": "Отозвать разрешение на доступ ко всем вашим $1 и их перевод?",
     "description": "$1 is the symbol of the token for which the user is revoking approval"
   },
+  "revokeAllTokensTitleWithoutSymbol": {
+    "message": "Отозвать разрешение на доступ ко всем вашим NFT из $1 и их перевод?",
+    "description": "$1 is a link to contract on the block explorer when we're not able to retrieve a erc721 or erc1155 name"
+  },
   "revokeApproveForAllDescription": {
     "message": "Это отменит разрешение третьей стороне на доступ ко всем вашим $1 и их перевод без дальнейшего уведомления.",
     "description": "$1 is either a string or link of a given token symbol or name"
+  },
+  "revokeApproveForAllDescriptionWithoutSymbol": {
+    "message": "Это отменит разрешение третьей стороне на доступ ко всем вашим NFT из $1 и их перевод без дальнейшего уведомления.",
+    "description": "$1 is a link to contract on the block explorer when we're not able to retrieve a erc721 or erc1155 name"
   },
   "revokeSpendingCap": {
     "message": "Отменить верхний лимит расходов для вашего $1",
@@ -3177,6 +3393,9 @@
   },
   "selectHdPath": {
     "message": "Выберите путь HD"
+  },
+  "selectJWT": {
+    "message": "Выбрать токен"
   },
   "selectNFTPrivacyPreference": {
     "message": "Включите обнаружение NFT в настройках"
@@ -3339,18 +3558,50 @@
   "snapInstall": {
     "message": "Установить снап"
   },
+  "snapInstallRequest": {
+    "message": "$1 хочет установить $2. Прежде чем продолжить, убедитесь, что вы доверяете авторам.",
+    "description": "$1 is the dApp origin requesting the snap and $2 is the snap name"
+  },
+  "snapInstallRequestsPermission": {
+    "message": "$1 хочет установить $2, который запрашивает следующие разрешения. Прежде чем продолжить, убедитесь, что вы доверяете авторам.",
+    "description": "$1 is the dApp origin requesting the snap and $2 is the snap name"
+  },
   "snapInstallWarningCheck": {
-    "message": "Чтобы подтвердить, что вы понимаете, отметьте все."
+    "message": "Убедитесь, что указанное ниже разрешение соответствует вашим предполагаемым действиям. Работайте только с авторами, которым вы доверяете."
   },
   "snapInstallWarningCheckPlural": {
-    "message": "Чтобы подтвердить, что вы понимаете, отметьте все ячейки."
+    "message": "Убедитесь, что указанные ниже разрешения соответствуют вашим предполагаемым действиям. Работайте только с авторами, которым вы доверяете."
+  },
+  "snapInstallWarningHeading": {
+    "message": "Действуйте с осторожностью"
   },
   "snapInstallWarningKeyAccess": {
     "message": "Вы предоставляете ключ доступа $2 к привязке \"$1\". Это действие нельзя отменить, и оно предоставляет \"$1\" управление всеми счетами и активами $2. Перед тем как продолжить, убедитесь, что доверяете \"$1\".",
     "description": "The first parameter is the name of the snap and the second one is the protocol"
   },
+  "snapInstallWarningPublicKeyAccess": {
+    "message": "Предоставить $1 доступ к открытому ключу $2",
+    "description": "The first parameter is the name of the snap and the second one is the protocol"
+  },
+  "snapResultError": {
+    "message": "Ошибка"
+  },
+  "snapResultSuccess": {
+    "message": "Успех"
+  },
+  "snapResultSuccessDescription": {
+    "message": "$1 теперь доступен для использования."
+  },
   "snapUpdate": {
     "message": "Обновить снап"
+  },
+  "snapUpdateRequest": {
+    "message": "$1 хочет обновить $2. Прежде чем продолжить, убедитесь, что вы доверяете авторам.",
+    "description": "$1 is the dApp origin requesting the snap and $2 is the snap name"
+  },
+  "snapUpdateRequestsPermission": {
+    "message": "$1 хочет обновить $2, который запрашивает следующие разрешения. Прежде чем продолжить, убедитесь, что вы доверяете авторам.",
+    "description": "$1 is the dApp origin requesting the snap and $2 is the snap name"
   },
   "snaps": {
     "message": "Снапы"
@@ -3997,6 +4248,9 @@
   "thingsToKeep": {
     "message": "Что нужно помнить:"
   },
+  "thisCollection": {
+    "message": "эта коллекция"
+  },
   "thisIsBasedOn": {
     "message": "Это основано на информации от "
   },
@@ -4288,6 +4542,9 @@
   "upArrow": {
     "message": "стрелка «вверх»"
   },
+  "update": {
+    "message": "Обновить"
+  },
   "updatedWithDate": {
     "message": "Обновлено $1"
   },
@@ -4382,6 +4639,9 @@
   "viewOnEtherscan": {
     "message": "Смотреть 1$ на Etherscan",
     "description": "$1 is the action type. e.g (Account, Transaction, Swap)"
+  },
+  "viewOnExplorer": {
+    "message": "Смотреть в Проводнике"
   },
   "viewOnOpensea": {
     "message": "Смотреть на Opensea"

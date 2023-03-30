@@ -150,6 +150,9 @@
   "accountSelectionRequired": {
     "message": "Bir hesap seçmeniz gerekiyor!"
   },
+  "activated": {
+    "message": "Aktif"
+  },
   "active": {
     "message": "Aktif"
   },
@@ -170,6 +173,9 @@
   },
   "addANickname": {
     "message": "Takma ad ekle"
+  },
+  "addAccount": {
+    "message": "Hesap ekleyin"
   },
   "addAcquiredTokens": {
     "message": "MetaMask kullanarak elde ettiğiniz tokenleri ekleyin"
@@ -257,11 +263,17 @@
     "message": "Bu ağ bağlantısı üçüncü taraflara dayalıdır. Bu bağlantı daha az güvenli olabilir veya üçüncü tarafların aktiviteleri takip etmesine olanak sağlayabilir. $1",
     "description": "$1 is Learn more link"
   },
+  "addNewToken": {
+    "message": "Yeni token ekleyin"
+  },
   "addSuggestedTokens": {
     "message": "Önerilen Tokenleri ekle"
   },
   "addToken": {
     "message": "Token ekle"
+  },
+  "addingCustomNetwork": {
+    "message": "Ağ Ekleniyor"
   },
   "address": {
     "message": "Adres"
@@ -315,6 +327,10 @@
     "message": "Sahip olduğunuz tüm $1",
     "description": "$1 is the symbol or name of the token that the user is approving spending"
   },
+  "allYourNFTsOf": {
+    "message": "Tüm $1 NFT'leriniz",
+    "description": "$1 is a link to contract on the block explorer when we're not able to retrieve a erc721 or erc1155 name"
+  },
   "allowExternalExtensionTo": {
     "message": "Bu harici uzantının şunu yapmasına izin ver:"
   },
@@ -359,6 +375,10 @@
     "message": "Sahip olduğun tüm $1 için erişim ve transfer izni verilsin mi?",
     "description": "$1 is the symbol of the token for which the user is granting approval"
   },
+  "approveAllTokensTitleWithoutSymbol": {
+    "message": "Tüm $1 NFT'lerinizin erişimine ve transferine izin verilsin mi?",
+    "description": "$1 a link to contract on the block explorer when we're not able to retrieve a erc721 or erc1155 name"
+  },
   "approveAndInstall": {
     "message": "Onayla ve Yükle"
   },
@@ -374,6 +394,10 @@
   },
   "approveTokenDescription": {
     "message": "Üçüncü bir tarafın, siz bu erişimi iptal edene kadar başka bildirim yapılmaksızın aşağıdaki NFT'lere erişim sağlamasına ve onları transfer edebilmesine izin verir."
+  },
+  "approveTokenDescriptionWithoutSymbol": {
+    "message": "Üçüncü bir tarafın, siz bu erişimi geri çekene kadar başkaca bildiri olmaksızın tüm $1 NFT'lerinize erişim sağlamasına ve onları transfer edebilmesine izin verir.",
+    "description": "$1 is a link to contract on the block explorer when we're not able to retrieve a erc721 or erc1155 name"
   },
   "approveTokenTitle": {
     "message": "$1 için erişim ve transferine izin ver?",
@@ -512,6 +536,9 @@
   "blockies": {
     "message": "Bloklar"
   },
+  "bridge": {
+    "message": "Köprü"
+  },
   "browserNotSupported": {
     "message": "Tarayıcınız desteklenmiyor..."
   },
@@ -615,8 +642,38 @@
   "close": {
     "message": "Kapat"
   },
+  "codefiCompliance": {
+    "message": "Codefi Uyumu"
+  },
   "coingecko": {
     "message": "CoinGecko"
+  },
+  "complianceBlurb0": {
+    "message": "Merkezsizleştirilmiş havuzlar ve takma adlı diğer taraflar söz konusu olduğunda DeFi kurumlar için AMK/CFT riskini artırır."
+  },
+  "complianceBlurb1": {
+    "message": "Codefi Uyumu DeFi havuzlarında AMK/CFT analizini çalıştırabilen tek üründür. Bu, risk ayarınızı karşılamayan havuzları ve diğer tarafları tanımlayabilip bunlardan kaçınmanıza olanak sağlar."
+  },
+  "complianceBlurbStep1": {
+    "message": "Aşağıda Codefi Uyumuna kaydolun"
+  },
+  "complianceBlurbStep2": {
+    "message": "Bir organizasyon oluştur"
+  },
+  "complianceBlurbStep3": {
+    "message": "Bir proje oluştur"
+  },
+  "complianceBlurbStep4": {
+    "message": "Uygunluk ayarlarınızı belirleyin"
+  },
+  "complianceBlurbStep5": {
+    "message": "\"MMI'de Uyumu Etkinleştir\" düğmesine tıklayın"
+  },
+  "complianceBlurpStep0": {
+    "message": "AMK/CFT Uyumunu etkinleştirme adımları:"
+  },
+  "complianceSettingsExplanation": {
+    "message": "Ayarlarınızı değiştirin veya Codefi Uyumunu açarak raporları görüntüleyin veya aşağıda bağlantıyı kesin."
   },
   "confirm": {
     "message": "Onayla"
@@ -1302,8 +1359,15 @@
     "message": "Yığın:",
     "description": "Title for error stack, which is displayed for debugging purposes"
   },
+  "errorWhileConnectingToRPC": {
+    "message": "Özel ağa bağlanırken hata oluştu."
+  },
   "ethGasPriceFetchWarning": {
     "message": "Ana gaz tahmini hizmeti olarak sunulan yedek gaz fiyatı şu anda kullanılamıyor."
+  },
+  "ethereumProviderAccess": {
+    "message": "Ethereum sağlayıcısına $1 erişimi ver",
+    "description": "The parameter is the name of the requesting origin"
   },
   "ethereumPublicAddress": {
     "message": "Ethereum genel adresi"
@@ -1323,8 +1387,14 @@
   "experimental": {
     "message": "Deneysel"
   },
+  "exploreMetaMaskSnaps": {
+    "message": "MetaMask Snap'lerini keşfedin"
+  },
   "exportPrivateKey": {
     "message": "Özel anahtarı dışa aktar"
+  },
+  "extendWalletWithSnaps": {
+    "message": "Cüzdan deneyimini genişletin."
   },
   "externalExtension": {
     "message": "Harici uzantı"
@@ -1354,6 +1424,9 @@
   "fileImportFail": {
     "message": "Dosya içe aktarma çalışmıyor mu? Buraya tıklayın!",
     "description": "Helps user import their account from a JSON file"
+  },
+  "fileTooBig": {
+    "message": "Bırakılan dosya çok büyük."
   },
   "flaskSnapSettingsCardButtonCta": {
     "message": "Ayrıntıları gör",
@@ -1531,6 +1604,9 @@
   "hardware": {
     "message": "Donanım"
   },
+  "hardwareWallet": {
+    "message": "Donanım cüzdanı"
+  },
   "hardwareWalletConnected": {
     "message": "Donanım cüzdanı bağlandı"
   },
@@ -1630,6 +1706,21 @@
   },
   "importAccountError": {
     "message": "Hesap içe aktarılırken hata oluştu."
+  },
+  "importAccountErrorIsSRP": {
+    "message": "Bir Gizli Kurtarma İfadesi (veya hatırlatıcı ipucu) girdiniz. Hesabı buraya aktarmak için 64 karakter uzunluğunda on altılık bir dizi olan özel bir anahtar girmelisiniz."
+  },
+  "importAccountErrorNotAValidPrivateKey": {
+    "message": "Bu geçerli bir özel anahtar değil. On altılık bir dizi girdiniz ancak bu dizi 64 karakter uzunluğunda olmalıdır."
+  },
+  "importAccountErrorNotHexadecimal": {
+    "message": "Bu geçerli bir özel anahtar değil. 64 karakter uzunluğunda on altılık bir dizi girmelisiniz."
+  },
+  "importAccountJsonLoading1": {
+    "message": "Bu JSON dosyasının birkaç dakika içinde içe aktarılmasını bekleyin ve MetaMask'i dondurun."
+  },
+  "importAccountJsonLoading2": {
+    "message": "Özür dileriz, bunu gelecekte daha hızlı hale getireceğiz."
   },
   "importAccountMsg": {
     "message": "İçe aktarılan hesaplar ilk olarak oluşturduğunuz MetaMask hesabı Gizli Kurtarma ifadenizle ilişkilendirilmez. İçe aktarılan hesaplar hakkında daha fazla bilgi edinin"
@@ -1913,6 +2004,9 @@
   "lock": {
     "message": "Kilitle"
   },
+  "lockMetaMask": {
+    "message": "MetaMask'i kilitle"
+  },
   "lockTimeTooGreat": {
     "message": "Kilitleme süresi çok fazla"
   },
@@ -2005,6 +2099,9 @@
   },
   "mismatchedNetworkSymbol": {
     "message": "Sunulan para birimi sembolü bu zincir kimliği için beklediğimiz sembolle uyumlu değil."
+  },
+  "mismatchedRpcChainId": {
+    "message": "Özel ağ tarafından geri dönen Zincir kimliği gönderilen zincir kimliği ile eşleşmiyor."
   },
   "mismatchedRpcUrl": {
     "message": "Kayıtlarımıza göre, sunulan RPC URL adresi değeri bu zincir kimliğinin bilinen bir sağlayıcısı ile uyumlu değil."
@@ -2231,7 +2328,7 @@
     "message": "Henüz NFT yok"
   },
   "noSnaps": {
-    "message": "Hiç Snap yüklü değil"
+    "message": "Yüklü snap'iniz yok."
   },
   "noThanksVariant2": {
     "message": "Hayır, teşekkürler."
@@ -2327,11 +2424,41 @@
   "notifications15Title": {
     "message": "Ethereum Birleşmesi başladı!"
   },
+  "notifications16ActionText": {
+    "message": "Güvenlik sağlayıcısını etkinleştir"
+  },
+  "notifications16DescriptionOne": {
+    "message": "Bilinen kötü amaçlı bir talep aldığınızda OpenSea'den uyarı alın.",
+    "description": "Description of a notification in the 'See What's New' popup. Describes Opensea Security Provider feature."
+  },
+  "notifications16DescriptionThree": {
+    "message": "Talepleri onaylamadan önce her zaman kendiniz gerekli özeni gösterdiğinizden emin olun.",
+    "description": "Description of a notification in the 'See What's New' popup. Describes Opensea Security Provider feature."
+  },
+  "notifications16DescriptionTwo": {
+    "message": "OpenSea bu özellik için ilk güvenlik sağlayıcısıdır. Daha fazla güvenlik sağlayıcısı çok yakında hizmetinizde olacak!",
+    "description": "Description of a notification in the 'See What's New' popup. Describes Opensea Security Provider feature."
+  },
+  "notifications16Title": {
+    "message": "OpenSea ile güvende kalın"
+  },
   "notifications17ActionText": {
-    "message": "Güvenlik ve Gizlilik ayarlarını göster"
+    "message": "NFT otomatik algılamayı etkinleştir"
+  },
+  "notifications17DescriptionOne": {
+    "message": "Başlayabilmenizin iki yolu:",
+    "description": "Description of a notification in the 'See What's New' popup. Describes NFT autodetection feature."
+  },
+  "notifications17DescriptionThree": {
+    "message": "Şu anda sadece ERC-721'i destekliyoruz.",
+    "description": "Description of a notification in the 'See What's New' popup. Describes NFT autodetection feature."
+  },
+  "notifications17DescriptionTwo": {
+    "message": "NFT'lerinizi manuel olarak ekleyin veya Ayarlar > Deneysel alanından otomatik NFT algılama özelliğini açın.",
+    "description": "Description of a notification in the 'See What's New' popup. Describes NFT autodetection feature."
   },
   "notifications17Title": {
-    "message": "Güvenlik ve Gizlilik Ayarları"
+    "message": "NFT'lerinizi eskiden hiç olmadığı kadar görün"
   },
   "notifications1Description": {
     "message": "MetaMask Mobil kullanıcıları artık mobil cüzdanları içinde token takas edebilirler. Mobil uygulamayı edinmek ve takas yapmaya başlamak için QR kodunu tarayın.",
@@ -2586,6 +2713,9 @@
   "onlyConnectTrust": {
     "message": "Sadece güvendiğiniz sitelere bağlayın."
   },
+  "openCodefiCompliance": {
+    "message": "Codefi Uyumunu aç"
+  },
   "openFullScreenForLedgerWebHid": {
     "message": "Kayıt defterinizi WebHID üzerinden bağlamak için MetaMask'i tam ekran açın.",
     "description": "Shown to the user on the confirm screen when they are viewing MetaMask in a popup window but need to connect their ledger via webhid."
@@ -2695,21 +2825,41 @@
     "message": "İnternete erişim sağla.",
     "description": "The description of the `endowment:network-access` permission."
   },
+  "permission_accessNetworkDescription": {
+    "message": "Snap'in internete erişim sağlamasına izin verin. Üçüncü taraf sunucuları ile hem veri göndermek hem de veri almak için kullanılabilir.",
+    "description": "An extended description of the `endowment:network-access` permission."
+  },
   "permission_accessSnap": {
     "message": "$1 snap'e bağlan.",
     "description": "The description for the `wallet_snap` permission. $1 is the name of the snap."
+  },
+  "permission_accessSnapDescription": {
+    "message": "Web sitesinin veya snap'in $1 ile etkileşimde bulunmasına izin verin.",
+    "description": "The description for the `wallet_snap_*` permission. $1 is the name of the Snap."
   },
   "permission_cronjob": {
     "message": "Periyodik eylemleri planla ve gerçekleştir.",
     "description": "The description for the `snap_cronjob` permission"
   },
+  "permission_cronjobDescription": {
+    "message": "Snap'in sabit saat, tarih veya aralıklarda periyodik olarak çalışan eylemleri gerçekleştirmesine izin verin. Zamana duyarlı etkileşim ya da bildirimleri tetiklemek için kullanılabilir.",
+    "description": "An extended description for the `snap_cronjob` permission"
+  },
   "permission_customConfirmation": {
     "message": "MetaMask'te bir onay görüntüle.",
     "description": "The description for the `snap_confirm` permission"
   },
+  "permission_customConfirmationDescription": {
+    "message": "Snap'in bir eylemi onaylamak ya da reddetmek için özel metin ve düğmelerle MetaMask açılır pencerelerini göstermesine izin verin.",
+    "description": "An extended description for the `snap_confirm` permission"
+  },
   "permission_dialog": {
     "message": "MetaMask'te iletişim kutusu pencerelerini göster.",
     "description": "The description for the `snap_dialog` permission"
+  },
+  "permission_dialogDescription": {
+    "message": "Snap'in bir eylemi onaylamak ya da reddetmek için özel metin, giriş alanı ve düğmelerle MetaMask açılır pencerelerini göstermesine izin verin.\nBir snap için ör. uyarı, onay ve talep edilen akış oluşturmak için kullanılabilir.",
+    "description": "An extended description for the `snap_dialog` permission"
   },
   "permission_ethereumAccounts": {
     "message": "Adrese, hesap bakiyesine, aktiviteye bakın ve işlemleri başlatın",
@@ -2719,21 +2869,41 @@
     "message": "Ethereum sağlayıcısına ulaş.",
     "description": "The description for the `endowment:ethereum-provider` permission"
   },
+  "permission_ethereumProviderDescription": {
+    "message": "Blok zincirinden veri okuyabilmesi ve mesaj ile işlemleri önerebilmesi için snap'in doğrudan MetaMask ile iletişim kurmasına izin verin.",
+    "description": "An extended description for the `endowment:ethereum-provider` permission"
+  },
   "permission_getEntropy": {
     "message": "Bu snap için eşsiz rastgele anahtarları türet.",
     "description": "The description for the `snap_getEntropy` permission"
+  },
+  "permission_getEntropyDescription": {
+    "message": "Snap'in, ifşa etmeden, bu snap'e özel rastgele anahtarlar türetmesine izin verin. Bu anahtarlar MetaMask hesap veya hesaplarınızdan ayrıdır ve özel anahtarlarınızla ya da Gizli Kurtarma İfadenizle bağlantılı değildir. Diğer snap'ler bu bilgilere erişim sağlayamaz.",
+    "description": "An extended description for the `snap_getEntropy` permission"
   },
   "permission_longRunning": {
     "message": "Süresiz çalıştır.",
     "description": "The description for the `endowment:long-running` permission"
   },
+  "permission_longRunningDescription": {
+    "message": "Snap'in örneğin büyük miktarda veri işlerken belirsiz süreyle çalışmasına izin verin.",
+    "description": "An extended description for the `endowment:long-running` permission"
+  },
   "permission_manageBip32Keys": {
     "message": "$1 ($2) altındaki hesaplarınızı ve varlıklarınızı kontrol edin.",
     "description": "The description for the `snap_getBip32Entropy` permission. $1 is a derivation path, e.g. 'm/44'/0'/0''. $2 is the elliptic curve name, e.g. 'secp256k1'."
   },
+  "permission_manageBip32KeysDescription": {
+    "message": "Snap'in, ifşa etmeden, Gizli Kurtarma İfadenize göre BIP-32 anahtar çiftleri türetmesine izin verin. Bu işlem $1 üzerinde tüm hesaplara ve varlıklara tam erişim verir.\nSnap, anahtarları yönetme yetkisi ile Ethereum (EVM'ler) ötesinde çeşitli blok zinciri protokollerini destekleyebilir.",
+    "description": "An extended description for the `snap_getBip32Entropy` permission. $1 is a derivation path (name)"
+  },
   "permission_manageBip44Keys": {
     "message": "\"$1\" hesaplarını ve varlıklarını kontrol et.",
     "description": "The description for the `snap_getBip44Entropy` permission. $1 is the name of a protocol, e.g. 'Filecoin'."
+  },
+  "permission_manageBip44KeysDescription": {
+    "message": "Snap'in, ifşa etmeden, Gizli Kurtarma İfadenize göre BIP-44 anahtar çiftleri türetmesine izin verin. Bu işlem $1 üzerinde tüm hesaplara ve varlıklara tam erişim verir.\nSnap, anahtarları yönetme yetkisi ile Ethereum (EVM'ler) ötesinde çeşitli blok zinciri protokollerini destekleyebilir.",
+    "description": "An extended description for the `snap_getBip44Entropy` permission. $1 is the name of a protocol, e.g., 'Filecoin'."
   },
   "permission_manageNamedBip32Keys": {
     "message": "$1 hesaplarınızı ve varlıklarınızı kontrol edin.",
@@ -2743,21 +2913,41 @@
     "message": "Verilerini cihazında sakla ve yönet.",
     "description": "The description for the `snap_manageState` permission"
   },
+  "permission_manageStateDescription": {
+    "message": "Snap'in şifreleme ile güvenli bir şekilde veri depolamasına, güncellemesine ve almasına izin verin. Diğer snap'ler bu bilgilere erişim sağlayamaz.",
+    "description": "An extended description for the `snap_manageState` permission"
+  },
   "permission_notifications": {
     "message": "Bildirimleri göster.",
     "description": "The description for the `snap_notify` permission"
+  },
+  "permission_notificationsDescription": {
+    "message": "Snap'in MetaMask dahilinde bildirim göstermesine izin verin. Eyleme geçirilebilir ya da zamana duyarlı bilgiler için bir snap tarafından kısa bir bildirim metni tetiklenebilir.",
+    "description": "An extended description for the `snap_notify` permission"
   },
   "permission_rpc": {
     "message": "$1 bu snaple doğrudan iletişim kurabilsin.",
     "description": "The description for the `endowment:rpc` permission. $1 is 'other snaps' or 'websites'."
   },
+  "permission_rpcDescription": {
+    "message": "$1 için snap'e mesaj gönderme ve snap'ten yanıt alma izni verin.",
+    "description": "An extended description for the `endowment:rpc` permission. $1 is 'other snaps' or 'websites'."
+  },
   "permission_transactionInsight": {
     "message": "İşlem ayrıntılarını al ve görüntüle.",
     "description": "The description for the `endowment:transaction-insight` permission"
   },
+  "permission_transactionInsightDescription": {
+    "message": "Snap'in işlemlerin şifresini çözmesine ve MetaMask Kullanıcı Arayüzü dahilinde ayrıntıları göstermesine izin verin. Kimlik avından korunma ve güvenlik çözümleri için kullanılabilir.",
+    "description": "An extended description for the `endowment:transaction-insight` permission"
+  },
   "permission_transactionInsightOrigin": {
     "message": "İşlem öneren web sitelerinin kökenlerini gör",
     "description": "The description for the `transactionOrigin` caveat, to be used with the `endowment:transaction-insight` permission"
+  },
+  "permission_transactionInsightOriginDescription": {
+    "message": "Snap'in işlem öneren web sitelerinin asıl adresini (URI) görmesine izin verin. Kimlik avından korunma ve güvenlik çözümleri için kullanılabilir.",
+    "description": "An extended description for the `transactionOrigin` caveat, to be used with the `endowment:transaction-insight` permission"
   },
   "permission_unknown": {
     "message": "Bilinmeyen izin: $1",
@@ -2767,9 +2957,21 @@
     "message": "$1 ($2) için genel anahtarınızı görüntüleyin.",
     "description": "The description for the `snap_getBip32PublicKey` permission. $1 is a derivation path, e.g. 'm/44'/0'/0''. $2 is the elliptic curve name, e.g. 'secp256k1'."
   },
+  "permission_viewBip32PublicKeysDescription": {
+    "message": "Snap'in $1 için genel anahtarları (ve adresleri) görüntülemesine izin verin. Bu eylem, herhangi bir şekilde hesapların ya da varlıkların kontrolünü vermez.",
+    "description": "An extended description for the `snap_getBip32PublicKey` permission. $1 is a derivation path (name)"
+  },
   "permission_viewNamedBip32PublicKeys": {
     "message": "$1 için herkese açık anahtarınızı görüntüleyin.",
     "description": "The description for the `snap_getBip32PublicKey` permission. $1 is a name for the derivation path, e.g., 'Ethereum accounts'."
+  },
+  "permission_webAssembly": {
+    "message": "WebAssembly desteği.",
+    "description": "The description of the `endowment:webassembly` permission."
+  },
+  "permission_webAssemblyDescription": {
+    "message": "Snap'in WebAssembly aracılığıyla düşük seviye gerçekleştirme ortamlarına erişim sağlamasına izin verin.",
+    "description": "An extended description of the `endowment:webassembly` permission."
   },
   "permissions": {
     "message": "İzinler"
@@ -2789,6 +2991,9 @@
   },
   "portfolio": {
     "message": "Portföy"
+  },
+  "portfolioView": {
+    "message": "Portföy görünümü"
   },
   "preferredLedgerConnectionType": {
     "message": "Tercih Edilen Kayıt Defteri bağlantı türü",
@@ -2946,6 +3151,9 @@
   "replace": {
     "message": "değiştir"
   },
+  "requestFailed": {
+    "message": "Talep başarısız oldu"
+  },
   "requestFlaggedAsMaliciousFallbackCopyReason": {
     "message": "Güvenlik sağlayıcısı başka bilgi paylaşmadı"
   },
@@ -3053,9 +3261,17 @@
     "message": "Tüm $1 için izin erişim ve transfer izni geri çekilsin mi?",
     "description": "$1 is the symbol of the token for which the user is revoking approval"
   },
+  "revokeAllTokensTitleWithoutSymbol": {
+    "message": "Tüm $1 NFT'lerinize erişim ve transfer izni geri çekilsin mi?",
+    "description": "$1 is a link to contract on the block explorer when we're not able to retrieve a erc721 or erc1155 name"
+  },
   "revokeApproveForAllDescription": {
     "message": "Bu durumda üçüncü bir tarafın başkaca bildiride bulunmaksızın tüm $1 erişim ve transfer izni geri çekilir.",
     "description": "$1 is either a string or link of a given token symbol or name"
+  },
+  "revokeApproveForAllDescriptionWithoutSymbol": {
+    "message": "Üçüncü bir tarafın, başkaca bildiri olmaksızın tüm $1 NFT'lerinize erişim sağlama ve onları transfer etme iznini geri çeker.",
+    "description": "$1 is a link to contract on the block explorer when we're not able to retrieve a erc721 or erc1155 name"
   },
   "revokeSpendingCap": {
     "message": "$1 için harcama üst limitini iptal et",
@@ -3177,6 +3393,9 @@
   },
   "selectHdPath": {
     "message": "HD yolunu seç"
+  },
+  "selectJWT": {
+    "message": "Token seç"
   },
   "selectNFTPrivacyPreference": {
     "message": "Ayarlarda NFT algılamayı açın"
@@ -3339,18 +3558,50 @@
   "snapInstall": {
     "message": "Snap'i yükle"
   },
+  "snapInstallRequest": {
+    "message": "$1, $2 yüklemek istiyor. İlerlemeden önce yazarlara güvendiğinizden emin olun.",
+    "description": "$1 is the dApp origin requesting the snap and $2 is the snap name"
+  },
+  "snapInstallRequestsPermission": {
+    "message": "$1, $2 yüklemek istiyor ve o da aşağıdaki izinleri istiyor. İlerlemeden önce yazarlara güvendiğinizden emin olun.",
+    "description": "$1 is the dApp origin requesting the snap and $2 is the snap name"
+  },
   "snapInstallWarningCheck": {
-    "message": "Anladığını doğrulamak için kutucuğu işaretle."
+    "message": "Aşağıdaki iznin planlı eylemlerinize uygun olduğundan emin olun. Sadece güvendiğiniz yazarlarla ilerleyin."
   },
   "snapInstallWarningCheckPlural": {
-    "message": "Anladığınızı kontrol etmek için tüm kutuları işaretleyin."
+    "message": "Aşağıdaki izinlerin planlı eylemlerinize uygun olduğundan emin olun. Sadece güvendiğiniz yazarlarla ilerleyin."
+  },
+  "snapInstallWarningHeading": {
+    "message": "Dikkatle ilerleyin"
   },
   "snapInstallWarningKeyAccess": {
     "message": "\"$1\" için $2 anahtar erişimi veriyorsunuz. Bu iptal edilemez ve $2 hesaplarınıza ve varlıklarınıza \"$1\" kontrolü verir. İlerlemeden önce \"$1\" alanına güvendiğinizden emin olun.",
     "description": "The first parameter is the name of the snap and the second one is the protocol"
   },
+  "snapInstallWarningPublicKeyAccess": {
+    "message": "$1 için $2 genel anahtar erişimi ver",
+    "description": "The first parameter is the name of the snap and the second one is the protocol"
+  },
+  "snapResultError": {
+    "message": "Hata"
+  },
+  "snapResultSuccess": {
+    "message": "Başarılı"
+  },
+  "snapResultSuccessDescription": {
+    "message": "$1 artık kullanılmaya hazır."
+  },
   "snapUpdate": {
     "message": "Snap'i güncelle"
+  },
+  "snapUpdateRequest": {
+    "message": "$1, $2 güncellemesi istiyor. İlerlemeden önce yazarlara güvendiğinizden emin olun.",
+    "description": "$1 is the dApp origin requesting the snap and $2 is the snap name"
+  },
+  "snapUpdateRequestsPermission": {
+    "message": "$1, $2 güncellemesi istiyor ve o da aşağıdaki izinleri istiyor. İlerlemeden önce yazarlara güvendiğinizden emin olun.",
+    "description": "$1 is the dApp origin requesting the snap and $2 is the snap name"
   },
   "snaps": {
     "message": "Snap'ler"
@@ -3997,6 +4248,9 @@
   "thingsToKeep": {
     "message": "Unutulmaması gerekenler:"
   },
+  "thisCollection": {
+    "message": "bu koleksiyon"
+  },
   "thisIsBasedOn": {
     "message": "Bu, şu kaynaktan alınan bilgilere dayanır: "
   },
@@ -4288,6 +4542,9 @@
   "upArrow": {
     "message": "yukarı ok"
   },
+  "update": {
+    "message": "Güncelle"
+  },
   "updatedWithDate": {
     "message": "$1 güncellendi"
   },
@@ -4382,6 +4639,9 @@
   "viewOnEtherscan": {
     "message": "Etherscan'de $1 görüntüle",
     "description": "$1 is the action type. e.g (Account, Transaction, Swap)"
+  },
+  "viewOnExplorer": {
+    "message": "Explorer'da görüntüleyin"
   },
   "viewOnOpensea": {
     "message": "Opensea'de görüntüle"

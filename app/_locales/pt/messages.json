@@ -150,6 +150,9 @@
   "accountSelectionRequired": {
     "message": "Você precisa selecionar uma conta!"
   },
+  "activated": {
+    "message": "Ativo"
+  },
   "active": {
     "message": "Ativo"
   },
@@ -170,6 +173,9 @@
   },
   "addANickname": {
     "message": "Adicionar um apelido"
+  },
+  "addAccount": {
+    "message": "Adicionar conta"
   },
   "addAcquiredTokens": {
     "message": "Adicione os tokens que você adquiriu usando a MetaMask"
@@ -257,11 +263,17 @@
     "message": "Esta conexão de rede depende de terceiros. Esta conexão pode ser menos confiável ou permitir que terceiros rastreiem atividades. $1",
     "description": "$1 is Learn more link"
   },
+  "addNewToken": {
+    "message": "Adicionar novo token"
+  },
   "addSuggestedTokens": {
     "message": "Adicionar tokens sugeridos"
   },
   "addToken": {
     "message": "Adicionar token"
+  },
+  "addingCustomNetwork": {
+    "message": "Adicionar rede"
   },
   "address": {
     "message": "Endereço"
@@ -315,6 +327,10 @@
     "message": "Todos os seus $1",
     "description": "$1 is the symbol or name of the token that the user is approving spending"
   },
+  "allYourNFTsOf": {
+    "message": "Todos os seus NFTs de $1",
+    "description": "$1 is a link to contract on the block explorer when we're not able to retrieve a erc721 or erc1155 name"
+  },
   "allowExternalExtensionTo": {
     "message": "Permitir que essa extensão externa:"
   },
@@ -359,6 +375,10 @@
     "message": "Permitir acesso a todos os seus $1?",
     "description": "$1 is the symbol of the token for which the user is granting approval"
   },
+  "approveAllTokensTitleWithoutSymbol": {
+    "message": "Permitir acesso e transferir todos os seus NFTs de $1?",
+    "description": "$1 a link to contract on the block explorer when we're not able to retrieve a erc721 or erc1155 name"
+  },
   "approveAndInstall": {
     "message": "Aprovar e instalar"
   },
@@ -374,6 +394,10 @@
   },
   "approveTokenDescription": {
     "message": "Isso permite que terceiros acessem e transfiram os seguintes NFTs sem aviso prévio até que você revogue o acesso."
+  },
+  "approveTokenDescriptionWithoutSymbol": {
+    "message": "Isso permite que um terceiro acesse e transfira todos os seus NFTs de $1 sem aviso até que você revogue esse acesso.",
+    "description": "$1 is a link to contract on the block explorer when we're not able to retrieve a erc721 or erc1155 name"
   },
   "approveTokenTitle": {
     "message": "Permitir acesso e transferência de seu $1?",
@@ -512,6 +536,9 @@
   "blockies": {
     "message": "Blockies"
   },
+  "bridge": {
+    "message": "Ponte"
+  },
   "browserNotSupported": {
     "message": "Seu navegador não é compatível..."
   },
@@ -615,8 +642,38 @@
   "close": {
     "message": "Fechar"
   },
+  "codefiCompliance": {
+    "message": "Codefi Compliance"
+  },
   "coingecko": {
     "message": "CoinGecko"
+  },
+  "complianceBlurb0": {
+    "message": "A DeFi eleva o risco de AML/CFT para as instituições, considerando-se os pools descentralizados e contrapartes pseudônimas."
+  },
+  "complianceBlurb1": {
+    "message": "O Codefi Compliance é o único produto capaz de executar uma análise AML/CFT nos pools DeFi. Isso permite que você identifique e evite pools e contrapartes em desacordo com suas configurações de risco."
+  },
+  "complianceBlurbStep1": {
+    "message": "Inscreva-se no Codefi Compliance abaixo"
+  },
+  "complianceBlurbStep2": {
+    "message": "Criar uma organização"
+  },
+  "complianceBlurbStep3": {
+    "message": "Criar um projeto"
+  },
+  "complianceBlurbStep4": {
+    "message": "Defina suas configurações de conformidade"
+  },
+  "complianceBlurbStep5": {
+    "message": "Clique no botão \"Habilitar Compliance no MMI\""
+  },
+  "complianceBlurpStep0": {
+    "message": "Passos para habilitar o Compliance de AML/CFT:"
+  },
+  "complianceSettingsExplanation": {
+    "message": "Altere suas configurações ou veja os relatórios abrindo o Codefi Compliance ou desconecte-se abaixo."
   },
   "confirm": {
     "message": "Confirmar"
@@ -1302,8 +1359,15 @@
     "message": "Lista:",
     "description": "Title for error stack, which is displayed for debugging purposes"
   },
+  "errorWhileConnectingToRPC": {
+    "message": "Erro ao conectar à rede personalizada."
+  },
   "ethGasPriceFetchWarning": {
     "message": "O preço de backup do gás é fornecido porque a estimativa de gás principal está indisponível no momento."
+  },
+  "ethereumProviderAccess": {
+    "message": "Conceder ao Ethereum acesso de provedor a $1",
+    "description": "The parameter is the name of the requesting origin"
   },
   "ethereumPublicAddress": {
     "message": "Endereço público do Ethereum"
@@ -1323,8 +1387,14 @@
   "experimental": {
     "message": "Experimental"
   },
+  "exploreMetaMaskSnaps": {
+    "message": "Explorar os snaps da MetaMask"
+  },
   "exportPrivateKey": {
     "message": "Exportar chave privada"
+  },
+  "extendWalletWithSnaps": {
+    "message": "Amplie a experiência da carteira."
   },
   "externalExtension": {
     "message": "Extensão externa"
@@ -1354,6 +1424,9 @@
   "fileImportFail": {
     "message": "A importação de ficheiro não está a funcionar? Carregue aqui!",
     "description": "Helps user import their account from a JSON file"
+  },
+  "fileTooBig": {
+    "message": "O arquivo inserido é grande demais."
   },
   "flaskSnapSettingsCardButtonCta": {
     "message": "Ver detalhes",
@@ -1531,6 +1604,9 @@
   "hardware": {
     "message": "Hardware"
   },
+  "hardwareWallet": {
+    "message": "Carteira de hardware"
+  },
   "hardwareWalletConnected": {
     "message": "Carteira de hardware conectada"
   },
@@ -1631,8 +1707,23 @@
   "importAccountError": {
     "message": "Erro de importação de conta."
   },
+  "importAccountErrorIsSRP": {
+    "message": "Você inseriu uma Frase de Recuperação Secreta (ou mnemônica). Para importar uma conta aqui, você precisa inserir uma chave privada, que é uma sequência hexadecimal de 64 caracteres."
+  },
+  "importAccountErrorNotAValidPrivateKey": {
+    "message": "Essa chave privada não é válida. Você inseriu uma sequência hexadecimal, mas seu tamanho deve ser de 64 caracteres."
+  },
+  "importAccountErrorNotHexadecimal": {
+    "message": "Essa chave privada não é válida. Você deve inserir uma sequência hexadecimal de 64 caracteres."
+  },
+  "importAccountJsonLoading1": {
+    "message": "É esperado que a importação do JSON leve alguns minutos e trave a MetaMask."
+  },
+  "importAccountJsonLoading2": {
+    "message": "Pedimos desculpas, e vamos acelerar esse processo futuramente."
+  },
   "importAccountMsg": {
-    "message": "Contas importadas não irão ser associadas com a frase seed da conta criada originalmente pelo MetaMask. Saiba mais sobre contas importadas."
+    "message": "Contas importadas não serão associadas à sua Frase Secreta de Recuperação na MetaMask. Saiba mais sobre contas importadas"
   },
   "importMyWallet": {
     "message": "Importar minha carteira"
@@ -1913,6 +2004,9 @@
   "lock": {
     "message": "Sair"
   },
+  "lockMetaMask": {
+    "message": "Trancar MetaMask"
+  },
   "lockTimeTooGreat": {
     "message": "O tempo de bloqueio é longo demais"
   },
@@ -2005,6 +2099,9 @@
   },
   "mismatchedNetworkSymbol": {
     "message": "O símbolo de moeda enviado não corresponde ao esperado para a ID desta cadeia."
+  },
+  "mismatchedRpcChainId": {
+    "message": "A rede personalizada retornou um ID de cadeia que não coincide com o ID de cadeia enviado."
   },
   "mismatchedRpcUrl": {
     "message": "De acordo com os nossos registros, o valor da URL da RPC enviado não corresponde a um provedor conhecido da ID desta cadeia."
@@ -2231,7 +2328,7 @@
     "message": "Nenhum NFT até agora"
   },
   "noSnaps": {
-    "message": "Nenhum snap instalado"
+    "message": "Você não tem nenhum snap instalado."
   },
   "noThanksVariant2": {
     "message": "Não, obrigado."
@@ -2327,11 +2424,41 @@
   "notifications15Title": {
     "message": "A fusão do Ethereum chegou!"
   },
+  "notifications16ActionText": {
+    "message": "Habilitar provedor de segurança"
+  },
+  "notifications16DescriptionOne": {
+    "message": "Receba avisos do OpenSea sempre que receber uma solicitação maliciosa conhecida.",
+    "description": "Description of a notification in the 'See What's New' popup. Describes Opensea Security Provider feature."
+  },
+  "notifications16DescriptionThree": {
+    "message": "Sempre se certifique de fazer sua devida diligência antes de aprovar qualquer solicitação.",
+    "description": "Description of a notification in the 'See What's New' popup. Describes Opensea Security Provider feature."
+  },
+  "notifications16DescriptionTwo": {
+    "message": "O OpenSea é o primeiro provedor de segurança para este recurso. Mais provedores chegarão em breve!",
+    "description": "Description of a notification in the 'See What's New' popup. Describes Opensea Security Provider feature."
+  },
+  "notifications16Title": {
+    "message": "Fique seguro com o OpenSea"
+  },
   "notifications17ActionText": {
-    "message": "Mostrar configurações de segurança e privacidade"
+    "message": "Habilitar detecção automática de NFTs"
+  },
+  "notifications17DescriptionOne": {
+    "message": "Há duas maneiras de começar:",
+    "description": "Description of a notification in the 'See What's New' popup. Describes NFT autodetection feature."
+  },
+  "notifications17DescriptionThree": {
+    "message": "Oferecemos suporte apenas ao ERC-721 no momento.",
+    "description": "Description of a notification in the 'See What's New' popup. Describes NFT autodetection feature."
+  },
+  "notifications17DescriptionTwo": {
+    "message": "Adicione manualmente seus NFTs ou ative a detecção automática de NFTs em Configurações > Experimental.",
+    "description": "Description of a notification in the 'See What's New' popup. Describes NFT autodetection feature."
   },
   "notifications17Title": {
-    "message": "Configurações de segurança e privacidade"
+    "message": "Veja seus NFTs como nunca viu antes"
   },
   "notifications1Description": {
     "message": "Usuários da MetaMask Mobile agora podem trocar tokens dentro de sua carteira mobile. Leia o QR code para obter o aplicativo para dispositivos móveis e comece a trocar.",
@@ -2586,6 +2713,9 @@
   "onlyConnectTrust": {
     "message": "Conecte-se somente com sites em que você confia."
   },
+  "openCodefiCompliance": {
+    "message": "Abrir Codefi Compliance"
+  },
   "openFullScreenForLedgerWebHid": {
     "message": "Abra a MetaMask em tela cheia para conectar sua ledger por meio do WebHID.",
     "description": "Shown to the user on the confirm screen when they are viewing MetaMask in a popup window but need to connect their ledger via webhid."
@@ -2695,21 +2825,41 @@
     "message": "Acesse a internet.",
     "description": "The description of the `endowment:network-access` permission."
   },
+  "permission_accessNetworkDescription": {
+    "message": "Permitir que o snap acesse a internet. Isso pode ser usado para enviar e receber dados de servidores de terceiros.",
+    "description": "An extended description of the `endowment:network-access` permission."
+  },
   "permission_accessSnap": {
     "message": "Conecte-se ao snap $1.",
     "description": "The description for the `wallet_snap` permission. $1 is the name of the snap."
+  },
+  "permission_accessSnapDescription": {
+    "message": "Permitir que o site ou snap interaja com $1.",
+    "description": "The description for the `wallet_snap_*` permission. $1 is the name of the Snap."
   },
   "permission_cronjob": {
     "message": "Agende e execute ações periódicas.",
     "description": "The description for the `snap_cronjob` permission"
   },
+  "permission_cronjobDescription": {
+    "message": "Permitir que o snap realize ações que são executadas periodicamente em horários, datas ou intervalos fixos. Isso pode ser usado para disparar interações ou notificações sensíveis ao tempo.",
+    "description": "An extended description for the `snap_cronjob` permission"
+  },
   "permission_customConfirmation": {
     "message": "Exibir uma confirmação na MetaMask.",
     "description": "The description for the `snap_confirm` permission"
   },
+  "permission_customConfirmationDescription": {
+    "message": "Permitir que o snap exiba pop-ups da MetaMask com texto personalizado e botões para aprovar ou rejeitar uma ação.",
+    "description": "An extended description for the `snap_confirm` permission"
+  },
   "permission_dialog": {
     "message": "Exibir janelas de diálogo na MetaMask.",
     "description": "The description for the `snap_dialog` permission"
+  },
+  "permission_dialogDescription": {
+    "message": "Permitir que o snap exiba pop-ups da MetaMask com texto personalizado, campo para entrada de informações e botões para aprovar ou rejeitar uma ação.\nPode ser usado, por exemplo, para criar alertas, confirmações e fluxos de adesão para um snap.",
+    "description": "An extended description for the `snap_dialog` permission"
   },
   "permission_ethereumAccounts": {
     "message": "Ver endereço, saldo da conta, atividade e iniciar transações",
@@ -2719,21 +2869,41 @@
     "message": "Acesse o provedor do Ethereum.",
     "description": "The description for the `endowment:ethereum-provider` permission"
   },
+  "permission_ethereumProviderDescription": {
+    "message": "Permitir que o snap se comunique diretamente com a MetaMask, para que possa ler dados da blockchain e sugerir mensagens e transações.",
+    "description": "An extended description for the `endowment:ethereum-provider` permission"
+  },
   "permission_getEntropy": {
     "message": "Derive chaves arbitrárias únicas para este snap.",
     "description": "The description for the `snap_getEntropy` permission"
+  },
+  "permission_getEntropyDescription": {
+    "message": "Permitir que o snap derive chaves arbitrárias únicas a esse snap sem as expor. Essas chaves são separadas das suas contas na MetaMask e não estão relacionadas às suas chaves privadas ou à Frase de Recuperação Secreta. Os outros snaps não podem acessar essas informações.",
+    "description": "An extended description for the `snap_getEntropy` permission"
   },
   "permission_longRunning": {
     "message": "Executar indefinidamente.",
     "description": "The description for the `endowment:long-running` permission"
   },
+  "permission_longRunningDescription": {
+    "message": "Permitir que o snap seja executado indefinidamente, por exemplo, enquanto processa grandes volumes de dados.",
+    "description": "An extended description for the `endowment:long-running` permission"
+  },
   "permission_manageBip32Keys": {
     "message": "Controle suas contas e ativos em $1 ($2).",
     "description": "The description for the `snap_getBip32Entropy` permission. $1 is a derivation path, e.g. 'm/44'/0'/0''. $2 is the elliptic curve name, e.g. 'secp256k1'."
   },
+  "permission_manageBip32KeysDescription": {
+    "message": "Permitir que o snap derive pares de chaves BIP-32 baseadas na sua Frase de Recuperação Secreta sem a expor. Isso concede acesso total a todas as contas e ativos em $1.\nCom o poder para gerenciar chaves, o snap é compatível com vários protocolos da blockchain além do Ethereum (EVMs).",
+    "description": "An extended description for the `snap_getBip32Entropy` permission. $1 is a derivation path (name)"
+  },
   "permission_manageBip44Keys": {
     "message": "Controlar suas contas e ativos do \"$1\".",
     "description": "The description for the `snap_getBip44Entropy` permission. $1 is the name of a protocol, e.g. 'Filecoin'."
+  },
+  "permission_manageBip44KeysDescription": {
+    "message": "Permitir que o snap derive pares de chaves BIP-44 baseadas na sua Frase de Recuperação Secreta sem a expor. Isso concede acesso total a todas as contas e ativos em $1.\nCom o poder para gerenciar chaves, o snap é compatível com vários protocolos da blockchain além do Ethereum (EVMs).",
+    "description": "An extended description for the `snap_getBip44Entropy` permission. $1 is the name of a protocol, e.g., 'Filecoin'."
   },
   "permission_manageNamedBip32Keys": {
     "message": "Controle suas contas e ativos em $1.",
@@ -2743,21 +2913,41 @@
     "message": "Armazenar e gerenciar dados pertinentes em seu dispositivo.",
     "description": "The description for the `snap_manageState` permission"
   },
+  "permission_manageStateDescription": {
+    "message": "Permitir que o snap armazene, atualize e recupere dados de maneira segura usando criptografia. Os outros snaps não podem acessar essas informações.",
+    "description": "An extended description for the `snap_manageState` permission"
+  },
   "permission_notifications": {
     "message": "Mostrar notificações.",
     "description": "The description for the `snap_notify` permission"
+  },
+  "permission_notificationsDescription": {
+    "message": "Permitir que o snap exiba notificações dentro da MetaMask. Um breve texto de notificação pode ser disparado por um snap para informações acionáveis ou sensíveis ao tempo.",
+    "description": "An extended description for the `snap_notify` permission"
   },
   "permission_rpc": {
     "message": "Permitir que $1 se comuniquem diretamente com esse snap.",
     "description": "The description for the `endowment:rpc` permission. $1 is 'other snaps' or 'websites'."
   },
+  "permission_rpcDescription": {
+    "message": "Permitir que $1 enviem mensagens ao snap e recebam resposta dele.",
+    "description": "An extended description for the `endowment:rpc` permission. $1 is 'other snaps' or 'websites'."
+  },
   "permission_transactionInsight": {
     "message": "Busque e exiba insights de transações.",
     "description": "The description for the `endowment:transaction-insight` permission"
   },
+  "permission_transactionInsightDescription": {
+    "message": "Permitir que o snap decodifique transações e exiba informações dentro da interface da MetaMask. Isso pode ser usado para soluções de segurança e antiphishing.",
+    "description": "An extended description for the `endowment:transaction-insight` permission"
+  },
   "permission_transactionInsightOrigin": {
     "message": "Verá as origens dos sites que sugerem transações",
     "description": "The description for the `transactionOrigin` caveat, to be used with the `endowment:transaction-insight` permission"
+  },
+  "permission_transactionInsightOriginDescription": {
+    "message": "Permitir que o snap veja a origem (URI) dos sites que sugerirem transações. Isso pode ser usado para soluções de segurança e antiphishing.",
+    "description": "An extended description for the `transactionOrigin` caveat, to be used with the `endowment:transaction-insight` permission"
   },
   "permission_unknown": {
     "message": "Permissão desconhecida: $1",
@@ -2767,9 +2957,21 @@
     "message": "Ver sua chave pública para $1 ($2).",
     "description": "The description for the `snap_getBip32PublicKey` permission. $1 is a derivation path, e.g. 'm/44'/0'/0''. $2 is the elliptic curve name, e.g. 'secp256k1'."
   },
+  "permission_viewBip32PublicKeysDescription": {
+    "message": "Permitir que o snap veja suas chaves públicas (e endereços) referentes a $1. Isso não concede nenhum tipo de controle das contas ou ativos.",
+    "description": "An extended description for the `snap_getBip32PublicKey` permission. $1 is a derivation path (name)"
+  },
   "permission_viewNamedBip32PublicKeys": {
     "message": "Veja sua chave pública para $1.",
     "description": "The description for the `snap_getBip32PublicKey` permission. $1 is a name for the derivation path, e.g., 'Ethereum accounts'."
+  },
+  "permission_webAssembly": {
+    "message": "Suporte a WebAssembly.",
+    "description": "The description of the `endowment:webassembly` permission."
+  },
+  "permission_webAssemblyDescription": {
+    "message": "Permitir que o snap acesse ambientes de execução de baixo nível via WebAssembly.",
+    "description": "An extended description of the `endowment:webassembly` permission."
   },
   "permissions": {
     "message": "Permissões"
@@ -2789,6 +2991,9 @@
   },
   "portfolio": {
     "message": "Portfólio"
+  },
+  "portfolioView": {
+    "message": "Vista do portfólio"
   },
   "preferredLedgerConnectionType": {
     "message": "Tipo de conexão preferencial com o Ledger",
@@ -2946,6 +3151,9 @@
   "replace": {
     "message": "substituir"
   },
+  "requestFailed": {
+    "message": "Falha na solicitação"
+  },
   "requestFlaggedAsMaliciousFallbackCopyReason": {
     "message": "O provedor de segurança não compartilhou mais detalhes"
   },
@@ -3047,15 +3255,23 @@
     "message": "Revelar a frase de recuperação"
   },
   "reviewSpendingCap": {
-    "message": "Revise seu limite de gastos"
+    "message": "Revise seu limite de gastos de"
   },
   "revokeAllTokensTitle": {
     "message": "Revogar permissão de acesso e transferência de todos os seus $1?",
     "description": "$1 is the symbol of the token for which the user is revoking approval"
   },
+  "revokeAllTokensTitleWithoutSymbol": {
+    "message": "Revogar a permissão para acessar e transferir todos os seus NFTs de $1?",
+    "description": "$1 is a link to contract on the block explorer when we're not able to retrieve a erc721 or erc1155 name"
+  },
   "revokeApproveForAllDescription": {
     "message": "Isso revoga a permissão de terceiros para acessar e transferir todos os seus $1 sem aviso prévio.",
     "description": "$1 is either a string or link of a given token symbol or name"
+  },
+  "revokeApproveForAllDescriptionWithoutSymbol": {
+    "message": "Isso revoga a permissão de um terceiro para acessar e transferir todos os seus NFTs de $1 sem aviso.",
+    "description": "$1 is a link to contract on the block explorer when we're not able to retrieve a erc721 or erc1155 name"
   },
   "revokeSpendingCap": {
     "message": "Revogar limite de gastos de seu $1",
@@ -3177,6 +3393,9 @@
   },
   "selectHdPath": {
     "message": "Selecione o caminho do disco rígido"
+  },
+  "selectJWT": {
+    "message": "Selecionar token"
   },
   "selectNFTPrivacyPreference": {
     "message": "Ative a detecção de NFTs nas configurações"
@@ -3339,18 +3558,50 @@
   "snapInstall": {
     "message": "Instalar snap"
   },
+  "snapInstallRequest": {
+    "message": "$1 deseja instalar $2. Certifique-se de que você confia nos autores antes de prosseguir.",
+    "description": "$1 is the dApp origin requesting the snap and $2 is the snap name"
+  },
+  "snapInstallRequestsPermission": {
+    "message": "$1 deseja instalar $2, que está solicitando as permissões a seguir. Certifique-se de que você confia nos autores antes de prosseguir.",
+    "description": "$1 is the dApp origin requesting the snap and $2 is the snap name"
+  },
   "snapInstallWarningCheck": {
-    "message": "Para confirmar que você entende, marque a caixa."
+    "message": "Certifique-se de que a permissão abaixo se alinha às suas ações pretendidas. Prossiga apenas com autores de sua confiança."
   },
   "snapInstallWarningCheckPlural": {
-    "message": "Para confirmar que você entende, marque todas as caixas."
+    "message": "Certifique-se de que as permissões abaixo se alinham às suas ações pretendidas. Prossiga apenas com autores de sua confiança."
+  },
+  "snapInstallWarningHeading": {
+    "message": "Prossiga com cautela"
   },
   "snapInstallWarningKeyAccess": {
     "message": "Você está concedendo ao snap \"$1\" acesso à sua chave $2. Isso é irrevogável e concede a \"$1\" controle de suas contas e ativos $2. Certifique-se de que confia em \"$1\" antes de prosseguir.",
     "description": "The first parameter is the name of the snap and the second one is the protocol"
   },
+  "snapInstallWarningPublicKeyAccess": {
+    "message": "Conceder a $2 o acesso a chave pública para $1",
+    "description": "The first parameter is the name of the snap and the second one is the protocol"
+  },
+  "snapResultError": {
+    "message": "Erro"
+  },
+  "snapResultSuccess": {
+    "message": "Sucesso"
+  },
+  "snapResultSuccessDescription": {
+    "message": "$1 agora está disponível para uso."
+  },
   "snapUpdate": {
     "message": "Atualizar snap"
+  },
+  "snapUpdateRequest": {
+    "message": "$1 deseja atualizar $2. Certifique-se de que você confia nos autores antes de prosseguir.",
+    "description": "$1 is the dApp origin requesting the snap and $2 is the snap name"
+  },
+  "snapUpdateRequestsPermission": {
+    "message": "$1 deseja atualizar $2, que está solicitando as permissões a seguir. Certifique-se de que você confia nos autores antes de prosseguir.",
+    "description": "$1 is the dApp origin requesting the snap and $2 is the snap name"
   },
   "snaps": {
     "message": "Snaps"
@@ -3813,7 +4064,7 @@
     "message": "Selecione uma cotação"
   },
   "swapSelectAToken": {
-    "message": "Selecionar um token"
+    "message": "Selecionar token"
   },
   "swapSelectQuotePopoverDescription": {
     "message": "Abaixo estão todas as cotações reunidas de diversas fontes de liquidez."
@@ -3996,6 +4247,9 @@
   },
   "thingsToKeep": {
     "message": "Informações importantes:"
+  },
+  "thisCollection": {
+    "message": "esta coleção"
   },
   "thisIsBasedOn": {
     "message": "Isso se baseia em informações de "
@@ -4288,6 +4542,9 @@
   "upArrow": {
     "message": "seta para cima"
   },
+  "update": {
+    "message": "Atualizar"
+  },
   "updatedWithDate": {
     "message": "Atualizado em $1"
   },
@@ -4382,6 +4639,9 @@
   "viewOnEtherscan": {
     "message": "Ver $1 no Etherscan",
     "description": "$1 is the action type. e.g (Account, Transaction, Swap)"
+  },
+  "viewOnExplorer": {
+    "message": "Ver no explorador"
   },
   "viewOnOpensea": {
     "message": "Ver no Opensea"
