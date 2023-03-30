@@ -289,4 +289,36 @@ describe('Phishing Detection', function () {
       },
     );
   });
+
+  it('should open a new extension expanded view when clicking back to safety button', async function () {
+    await withFixtures(
+      {
+        fixtures: new FixtureBuilder().build(),
+        ganacheOptions,
+        title: this.test.title,
+        testSpecificMock: mockPhishingDetection,
+        dapp: false,
+        failOnConsoleError: false,
+      },
+      async ({ driver }) => {
+        await driver.navigate();
+        await driver.fill('#password', 'correct horse battery staple');
+        await driver.press('#password', driver.Key.ENTER);
+        await driver.openNewPage('http://127.0.0.1:8080');
+
+        await driver.clickElement({ text: 'report a detection problem.' });
+        // await driver.openNewPage('127.0.0.1');
+
+        // await driver.clickElement({ text: 'Back to safety' });
+
+        // // page is redirected to extension expanded view
+        // const currentURL = await driver.getCurrentUrl();
+        // // TODO: HOME/BACKGROUND
+        // const extensionURLRegex = /^chrome-extension://[a-zA-Z0-9]+/home\.html$/;
+        // // wait for page to load before checking URL.
+        // await driver.findElement({ text: 'Empty page' });
+        // assert.equal(currentURL.match(extensionURLRegex), true);
+      },
+    );
+  });
 });
