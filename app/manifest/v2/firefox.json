@@ -5,5 +5,19 @@
       "strict_min_version": "78.0"
     }
   },
-  "permissions": ["tabs"]
+  "permissions": [
+    "storage",
+    "unlimitedStorage",
+    "clipboardWrite",
+    "http://localhost:8545/",
+    "https://*.infura.io/",
+    "https://*.codefi.network/",
+    "https://chainid.network/chains.json",
+    "https://lattice.gridplus.io/*",
+    "activeTab",
+    "tabs",
+    "webRequest",
+    "*://*.eth/",
+    "notifications"
+  ]
 }
